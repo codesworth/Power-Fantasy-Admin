@@ -7,22 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83B96314ACDB6614AE0DC2E1 /* Pods_PFFantasy_Admin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CE2A8213F6DCC2539E63420 /* Pods_PFFantasy_Admin.framework */; };
+		C4D4FDAE2035A6D4005EA125 /* KeyChainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D4FDAD2035A6D4005EA125 /* KeyChainService.swift */; };
 		C4E1CB6D20348F9B00BBED0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E1CB6C20348F9B00BBED0B /* AppDelegate.swift */; };
-		C4E1CB6F20348F9B00BBED0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E1CB6E20348F9B00BBED0B /* ViewController.swift */; };
 		C4E1CB7220348F9B00BBED0B /* PFFantasy_Admin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C4E1CB7020348F9B00BBED0B /* PFFantasy_Admin.xcdatamodeld */; };
 		C4E1CB7420348F9B00BBED0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4E1CB7320348F9B00BBED0B /* Assets.xcassets */; };
 		C4E1CB7720348F9B00BBED0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4E1CB7520348F9B00BBED0B /* Main.storyboard */; };
+		C4E1CB802034910E00BBED0B /* CoredataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E1CB7F2034910E00BBED0B /* CoredataStack.swift */; };
+		C4E1CB872034947400BBED0B /* AdminLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E1CB862034947400BBED0B /* AdminLoginVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3CE2A8213F6DCC2539E63420 /* Pods_PFFantasy_Admin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PFFantasy_Admin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D50595F9407719CCF794563 /* Pods-PFFantasy-Admin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PFFantasy-Admin.release.xcconfig"; path = "Pods/Target Support Files/Pods-PFFantasy-Admin/Pods-PFFantasy-Admin.release.xcconfig"; sourceTree = "<group>"; };
+		C4D4FDAD2035A6D4005EA125 /* KeyChainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainService.swift; sourceTree = "<group>"; };
 		C4E1CB6920348F9B00BBED0B /* PFFantasy-Admin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PFFantasy-Admin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4E1CB6C20348F9B00BBED0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C4E1CB6E20348F9B00BBED0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C4E1CB7120348F9B00BBED0B /* PFFantasy_Admin.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PFFantasy_Admin.xcdatamodel; sourceTree = "<group>"; };
 		C4E1CB7320348F9B00BBED0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4E1CB7620348F9B00BBED0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C4E1CB7820348F9B00BBED0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4E1CB7920348F9B00BBED0B /* PFFantasy_Admin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PFFantasy_Admin.entitlements; sourceTree = "<group>"; };
+		C4E1CB7F2034910E00BBED0B /* CoredataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoredataStack.swift; sourceTree = "<group>"; };
+		C4E1CB862034947400BBED0B /* AdminLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminLoginVC.swift; sourceTree = "<group>"; };
+		C52481E4B667ACE061E71E78 /* Pods-PFFantasy-Admin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PFFantasy-Admin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PFFantasy-Admin/Pods-PFFantasy-Admin.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,17 +38,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83B96314ACDB6614AE0DC2E1 /* Pods_PFFantasy_Admin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		118B7F66D0B9288D0F909475 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C52481E4B667ACE061E71E78 /* Pods-PFFantasy-Admin.debug.xcconfig */,
+				5D50595F9407719CCF794563 /* Pods-PFFantasy-Admin.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C4E1CB6020348F9B00BBED0B = {
 			isa = PBXGroup;
 			children = (
 				C4E1CB6B20348F9B00BBED0B /* PFFantasy-Admin */,
 				C4E1CB6A20348F9B00BBED0B /* Products */,
+				118B7F66D0B9288D0F909475 /* Pods */,
+				D651E10E47929BCBB498714B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,15 +75,65 @@
 		C4E1CB6B20348F9B00BBED0B /* PFFantasy-Admin */ = {
 			isa = PBXGroup;
 			children = (
-				C4E1CB6C20348F9B00BBED0B /* AppDelegate.swift */,
-				C4E1CB6E20348F9B00BBED0B /* ViewController.swift */,
-				C4E1CB7320348F9B00BBED0B /* Assets.xcassets */,
-				C4E1CB7520348F9B00BBED0B /* Main.storyboard */,
-				C4E1CB7820348F9B00BBED0B /* Info.plist */,
+				C4E1CB852034943200BBED0B /* Resources */,
+				C4E1CB842034942A00BBED0B /* Services */,
+				C4E1CB832034942300BBED0B /* Model */,
+				C4E1CB822034941C00BBED0B /* View */,
+				C4E1CB81203493F900BBED0B /* Controller */,
 				C4E1CB7920348F9B00BBED0B /* PFFantasy_Admin.entitlements */,
 				C4E1CB7020348F9B00BBED0B /* PFFantasy_Admin.xcdatamodeld */,
+				C4E1CB7F2034910E00BBED0B /* CoredataStack.swift */,
+				C4E1CB7820348F9B00BBED0B /* Info.plist */,
 			);
 			path = "PFFantasy-Admin";
+			sourceTree = "<group>";
+		};
+		C4E1CB81203493F900BBED0B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C4E1CB6C20348F9B00BBED0B /* AppDelegate.swift */,
+				C4E1CB862034947400BBED0B /* AdminLoginVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C4E1CB822034941C00BBED0B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C4E1CB7520348F9B00BBED0B /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C4E1CB832034942300BBED0B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C4E1CB842034942A00BBED0B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C4D4FDAD2035A6D4005EA125 /* KeyChainService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C4E1CB852034943200BBED0B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C4E1CB7320348F9B00BBED0B /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D651E10E47929BCBB498714B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CE2A8213F6DCC2539E63420 /* Pods_PFFantasy_Admin.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -73,9 +143,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4E1CB7C20348F9B00BBED0B /* Build configuration list for PBXNativeTarget "PFFantasy-Admin" */;
 			buildPhases = (
+				CD44BCF9628232383CFAECDB /* [CP] Check Pods Manifest.lock */,
 				C4E1CB6520348F9B00BBED0B /* Sources */,
 				C4E1CB6620348F9B00BBED0B /* Frameworks */,
 				C4E1CB6720348F9B00BBED0B /* Resources */,
+				99C22AA3105742F85D3866BD /* [CP] Embed Pods Frameworks */,
+				2143B2E86C80F0AA73E4C747 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,14 +205,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2143B2E86C80F0AA73E4C747 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PFFantasy-Admin/Pods-PFFantasy-Admin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99C22AA3105742F85D3866BD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PFFantasy-Admin/Pods-PFFantasy-Admin-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PFFantasy-Admin/Pods-PFFantasy-Admin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD44BCF9628232383CFAECDB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PFFantasy-Admin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C4E1CB6520348F9B00BBED0B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4E1CB6F20348F9B00BBED0B /* ViewController.swift in Sources */,
+				C4E1CB872034947400BBED0B /* AdminLoginVC.swift in Sources */,
 				C4E1CB7220348F9B00BBED0B /* PFFantasy_Admin.xcdatamodeld in Sources */,
+				C4D4FDAE2035A6D4005EA125 /* KeyChainService.swift in Sources */,
 				C4E1CB6D20348F9B00BBED0B /* AppDelegate.swift in Sources */,
+				C4E1CB802034910E00BBED0B /* CoredataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +394,7 @@
 		};
 		C4E1CB7D20348F9B00BBED0B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C52481E4B667ACE061E71E78 /* Pods-PFFantasy-Admin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "PFFantasy-Admin/PFFantasy_Admin.entitlements";
@@ -281,6 +411,7 @@
 		};
 		C4E1CB7E20348F9B00BBED0B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D50595F9407719CCF794563 /* Pods-PFFantasy-Admin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "PFFantasy-Admin/PFFantasy_Admin.entitlements";

@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="XfG-lQ-9wD">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11134"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13771"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -673,7 +674,7 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="PFFantasy_Admin" customModuleProvider="target"/>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -688,7 +689,7 @@
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
-			<connections>
+                        <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
                         </connections>
                     </window>
@@ -700,18 +701,98 @@
             </objects>
             <point key="canvasLocation" x="75" y="250"/>
         </scene>
-        <!--View Controller-->
+        <!--Admin LoginVC-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController showSeguePresentationStyle="single" id="XfG-lQ-9wD" customClass="AdminLoginVC" customModule="PFFantasy_Admin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="700" height="500"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView autoresizesSubviews="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1qp-AD-TZt">
+                                <rect key="frame" x="278" y="43" width="5" height="380"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="5" id="FMc-OO-ycq"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.backgroundColor">
+                                        <color key="value" red="0.23957576155662536" green="0.85986497402191164" blue="0.88637828826904297" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </customView>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nl2-KD-UnT">
+                                <rect key="frame" x="330" y="186" width="350" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="WBq-ca-8sF"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="WhT-iB-lsa"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Password" drawsBackground="YES" id="Y5K-mi-TUK">
+                                    <font key="font" size="18" name=".HelveticaNeueDeskInterface-Regular"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="obi-Jm-3fb">
+                                <rect key="frame" x="243" y="443" width="214" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="210" id="j2y-10-wsC"/>
+                                    <constraint firstAttribute="height" constant="37" id="zgz-at-KDa"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="FANTASY ADMIN " id="A2h-TI-2od">
+                                    <font key="font" size="20" name="SFUIDisplay-Semibold"/>
+                                    <color key="textColor" red="0.039215686274509803" green="0.78823529411764703" blue="0.85098039215686272" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y8V-ON-Xf1">
+                                <rect key="frame" x="429" y="96" width="153" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Q5N-sC-1pe"/>
+                                </constraints>
+                                <buttonCell key="cell" type="bevel" title="LOG IN" bezelStyle="rounded" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="TSK-YR-Gcp">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="olK-wB-N8K">
+                                <rect key="frame" x="330" y="306" width="350" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="hFC-XY-fFP"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Admin User ID" drawsBackground="YES" id="viq-7E-E1P">
+                                    <font key="font" size="18" name=".HelveticaNeueDeskInterface-Regular"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="olK-wB-N8K" secondAttribute="trailing" constant="20" id="1fH-hy-pCa"/>
+                            <constraint firstAttribute="trailing" secondItem="y8V-ON-Xf1" secondAttribute="trailing" constant="118" id="2HV-Nl-qtR"/>
+                            <constraint firstItem="nl2-KD-UnT" firstAttribute="leading" secondItem="1qp-AD-TZt" secondAttribute="trailing" constant="47" id="B1M-Ql-GTs"/>
+                            <constraint firstItem="olK-wB-N8K" firstAttribute="top" secondItem="obi-Jm-3fb" secondAttribute="bottom" constant="97" id="DTm-al-cIP"/>
+                            <constraint firstItem="obi-Jm-3fb" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="Ecb-t2-Jkg"/>
+                            <constraint firstItem="nl2-KD-UnT" firstAttribute="top" secondItem="olK-wB-N8K" secondAttribute="bottom" constant="80" id="HN7-3e-sPm"/>
+                            <constraint firstItem="olK-wB-N8K" firstAttribute="leading" secondItem="1qp-AD-TZt" secondAttribute="trailing" constant="47" id="Rbs-D4-OZW"/>
+                            <constraint firstItem="1qp-AD-TZt" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="278" id="Xfo-b3-h5s"/>
+                            <constraint firstItem="y8V-ON-Xf1" firstAttribute="leading" secondItem="1qp-AD-TZt" secondAttribute="trailing" constant="146" id="ZIH-i5-khN"/>
+                            <constraint firstAttribute="trailing" secondItem="nl2-KD-UnT" secondAttribute="trailing" constant="20" id="cMp-Um-Auh"/>
+                            <constraint firstItem="obi-Jm-3fb" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="ex0-5O-fTA"/>
+                            <constraint firstItem="y8V-ON-Xf1" firstAttribute="top" secondItem="nl2-KD-UnT" secondAttribute="bottom" constant="50" id="p2b-BZ-az3"/>
+                            <constraint firstItem="1qp-AD-TZt" firstAttribute="top" secondItem="obi-Jm-3fb" secondAttribute="bottom" constant="20" id="udA-8a-71s"/>
+                            <constraint firstAttribute="bottom" secondItem="1qp-AD-TZt" secondAttribute="bottom" constant="43" id="zI2-6m-MAC"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="dividerview" destination="1qp-AD-TZt" id="eZY-EV-8Tb"/>
+                        <outlet property="loginButt" destination="y8V-ON-Xf1" id="2MA-jl-MqX"/>
+                        <outlet property="passwrdtext" destination="nl2-KD-UnT" id="9Dh-zv-3PO"/>
+                        <outlet property="useridtxt" destination="olK-wB-N8K" id="KGn-E3-9Yb"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="101" y="875"/>
         </scene>
     </scenes>
 </document>

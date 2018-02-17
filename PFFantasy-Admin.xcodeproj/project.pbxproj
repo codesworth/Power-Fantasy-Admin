@@ -8,6 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		83B96314ACDB6614AE0DC2E1 /* Pods_PFFantasy_Admin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CE2A8213F6DCC2539E63420 /* Pods_PFFantasy_Admin.framework */; };
+		C422C85B20373E8800C47276 /* AccountsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C422C85A20373E8800C47276 /* AccountsVC.swift */; };
+		C422C85D20373EBE00C47276 /* AccoutsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C422C85C20373EBE00C47276 /* AccoutsCell.swift */; };
+		C422C85F203740C600C47276 /* CXFEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = C422C85E203740C600C47276 /* CXFEnums.swift */; };
+		C422C861203765D000C47276 /* PreferenceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C422C860203765D000C47276 /* PreferenceVC.swift */; };
+		C422C8632037823C00C47276 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C422C8622037823C00C47276 /* Extensions.swift */; };
+		C4A35AAE2035D15800C11C7D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A35AAD2035D15800C11C7D /* Constants.swift */; };
+		C4A35AB02035D21300C11C7D /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A35AAF2035D21300C11C7D /* Log.swift */; };
+		C4A35AB2203623E900C11C7D /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A35AB1203623E900C11C7D /* CoreDataService.swift */; };
+		C4A35AB42036289400C11C7D /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A35AB32036289400C11C7D /* Dashboard.swift */; };
+		C4AA51E62036C1B200F6D983 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AA51E52036C1B200F6D983 /* CustomView.swift */; };
+		C4AA51E82036D02000F6D983 /* FlatButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AA51E72036D02000F6D983 /* FlatButton.swift */; };
+		C4AA51EB2036FCE900F6D983 /* Dataservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AA51E92036FCE800F6D983 /* Dataservice.swift */; };
+		C4AA51EC2036FCE900F6D983 /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AA51EA2036FCE900F6D983 /* Routes.swift */; };
 		C4D4FDAE2035A6D4005EA125 /* KeyChainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D4FDAD2035A6D4005EA125 /* KeyChainService.swift */; };
 		C4E1CB6D20348F9B00BBED0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E1CB6C20348F9B00BBED0B /* AppDelegate.swift */; };
 		C4E1CB7220348F9B00BBED0B /* PFFantasy_Admin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C4E1CB7020348F9B00BBED0B /* PFFantasy_Admin.xcdatamodeld */; };
@@ -20,6 +33,19 @@
 /* Begin PBXFileReference section */
 		3CE2A8213F6DCC2539E63420 /* Pods_PFFantasy_Admin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PFFantasy_Admin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D50595F9407719CCF794563 /* Pods-PFFantasy-Admin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PFFantasy-Admin.release.xcconfig"; path = "Pods/Target Support Files/Pods-PFFantasy-Admin/Pods-PFFantasy-Admin.release.xcconfig"; sourceTree = "<group>"; };
+		C422C85A20373E8800C47276 /* AccountsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsVC.swift; sourceTree = "<group>"; };
+		C422C85C20373EBE00C47276 /* AccoutsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccoutsCell.swift; sourceTree = "<group>"; };
+		C422C85E203740C600C47276 /* CXFEnums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CXFEnums.swift; sourceTree = "<group>"; };
+		C422C860203765D000C47276 /* PreferenceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceVC.swift; sourceTree = "<group>"; };
+		C422C8622037823C00C47276 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C4A35AAD2035D15800C11C7D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C4A35AAF2035D21300C11C7D /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		C4A35AB1203623E900C11C7D /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
+		C4A35AB32036289400C11C7D /* Dashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
+		C4AA51E52036C1B200F6D983 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		C4AA51E72036D02000F6D983 /* FlatButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlatButton.swift; sourceTree = "<group>"; };
+		C4AA51E92036FCE800F6D983 /* Dataservice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dataservice.swift; sourceTree = "<group>"; };
+		C4AA51EA2036FCE900F6D983 /* Routes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
 		C4D4FDAD2035A6D4005EA125 /* KeyChainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainService.swift; sourceTree = "<group>"; };
 		C4E1CB6920348F9B00BBED0B /* PFFantasy-Admin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PFFantasy-Admin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4E1CB6C20348F9B00BBED0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +80,22 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		C4A35AB520363CBF00C11C7D /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C4AA51E72036D02000F6D983 /* FlatButton.swift */,
+				C4A35AB620363CCA00C11C7D /* CustomSegue */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		C4A35AB620363CCA00C11C7D /* CustomSegue */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomSegue;
+			sourceTree = "<group>";
+		};
 		C4E1CB6020348F9B00BBED0B = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +117,7 @@
 		C4E1CB6B20348F9B00BBED0B /* PFFantasy-Admin */ = {
 			isa = PBXGroup;
 			children = (
+				C4A35AB520363CBF00C11C7D /* Sources */,
 				C4E1CB852034943200BBED0B /* Resources */,
 				C4E1CB842034942A00BBED0B /* Services */,
 				C4E1CB832034942300BBED0B /* Model */,
@@ -93,6 +136,9 @@
 			children = (
 				C4E1CB6C20348F9B00BBED0B /* AppDelegate.swift */,
 				C4E1CB862034947400BBED0B /* AdminLoginVC.swift */,
+				C4A35AB32036289400C11C7D /* Dashboard.swift */,
+				C422C85A20373E8800C47276 /* AccountsVC.swift */,
+				C422C860203765D000C47276 /* PreferenceVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -101,6 +147,8 @@
 			isa = PBXGroup;
 			children = (
 				C4E1CB7520348F9B00BBED0B /* Main.storyboard */,
+				C4AA51E52036C1B200F6D983 /* CustomView.swift */,
+				C422C85C20373EBE00C47276 /* AccoutsCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -108,6 +156,8 @@
 		C4E1CB832034942300BBED0B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C422C85E203740C600C47276 /* CXFEnums.swift */,
+				C422C8622037823C00C47276 /* Extensions.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -115,7 +165,12 @@
 		C4E1CB842034942A00BBED0B /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				C4AA51E92036FCE800F6D983 /* Dataservice.swift */,
+				C4AA51EA2036FCE900F6D983 /* Routes.swift */,
 				C4D4FDAD2035A6D4005EA125 /* KeyChainService.swift */,
+				C4A35AAD2035D15800C11C7D /* Constants.swift */,
+				C4A35AAF2035D21300C11C7D /* Log.swift */,
+				C4A35AB1203623E900C11C7D /* CoreDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -228,10 +283,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-PFFantasy-Admin/Pods-PFFantasy-Admin-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,10 +322,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4E1CB872034947400BBED0B /* AdminLoginVC.swift in Sources */,
+				C422C8632037823C00C47276 /* Extensions.swift in Sources */,
+				C4A35AB42036289400C11C7D /* Dashboard.swift in Sources */,
+				C422C85F203740C600C47276 /* CXFEnums.swift in Sources */,
 				C4E1CB7220348F9B00BBED0B /* PFFantasy_Admin.xcdatamodeld in Sources */,
 				C4D4FDAE2035A6D4005EA125 /* KeyChainService.swift in Sources */,
 				C4E1CB6D20348F9B00BBED0B /* AppDelegate.swift in Sources */,
+				C4AA51E82036D02000F6D983 /* FlatButton.swift in Sources */,
+				C422C85B20373E8800C47276 /* AccountsVC.swift in Sources */,
+				C4AA51E62036C1B200F6D983 /* CustomView.swift in Sources */,
+				C422C85D20373EBE00C47276 /* AccoutsCell.swift in Sources */,
+				C4A35AB2203623E900C11C7D /* CoreDataService.swift in Sources */,
+				C4AA51EC2036FCE900F6D983 /* Routes.swift in Sources */,
+				C4A35AB02035D21300C11C7D /* Log.swift in Sources */,
 				C4E1CB802034910E00BBED0B /* CoredataStack.swift in Sources */,
+				C4A35AAE2035D15800C11C7D /* Constants.swift in Sources */,
+				C422C861203765D000C47276 /* PreferenceVC.swift in Sources */,
+				C4AA51EB2036FCE900F6D983 /* Dataservice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,7 +467,7 @@
 			baseConfigurationReference = C52481E4B667ACE061E71E78 /* Pods-PFFantasy-Admin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "PFFantasy-Admin/PFFantasy_Admin.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = MB46J93Q7Z;
@@ -405,6 +475,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.codesworth.PFFantasy-Admin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -414,7 +485,7 @@
 			baseConfigurationReference = 5D50595F9407719CCF794563 /* Pods-PFFantasy-Admin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "PFFantasy-Admin/PFFantasy_Admin.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = MB46J93Q7Z;
@@ -422,6 +493,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.codesworth.PFFantasy-Admin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;

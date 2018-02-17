@@ -43,6 +43,22 @@ class CoreDataStack{
     
     // MARK: - Core Data Saving and Undo support
     
+    static func saveContext(){
+        let context = CoreDataStack.persistentContainer.viewContext
+        
+        if !context.commitEditing() {
+            NSLog("\(NSStringFromClass(type(of: self) as! AnyClass)) unable to commit editing before saving")
+        }
+        if context.hasChanges {
+            do {
+                try context.save()
+            } catch {
+                // Customize this code block to include application-specific recovery steps.
+                let nserror = error as NSError
+                log(nserror.localizedDescription)
+            }
+        }
+    }
 
     
 }

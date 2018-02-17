@@ -11,11 +11,16 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
+    
 
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        
+        //Dataservice.service.getUsers()
+        //Dataservice.service.postTofirebase(key: "Mandrake", data: ["hell":"Madness" as AnyObject], path: "http://localhost:3000/api/v1/NewUsers")
         // Insert code here to initialize your application
+        SERIAL = getMachineSerial()
+        log("The serial is \(SERIAL)")
+        
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
@@ -25,7 +30,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     func windowWillReturnUndoManager(window: NSWindow) -> UndoManager? {
         // Returns the NSUndoManager for the application. In this case, the manager returned is that of the managed object context for the application.
-
+    
         return CoreDataStack.persistentContainer.viewContext.undoManager
     }
     

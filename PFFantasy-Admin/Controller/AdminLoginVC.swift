@@ -17,8 +17,8 @@ class AdminLoginVC: NSViewController {
     @IBOutlet weak var useridtxt: NSTextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do view setup here.
         setup()
+        DECLAREDOMAIN(domain: LoggerDomain.startup)
         
     }
     
@@ -33,5 +33,44 @@ class AdminLoginVC: NSViewController {
     }
     
     
+    @IBAction func logInPressed(_ sender: NSButton) {
+        Log.log(statement: "Attempted Log In", domain: nil)
+        Dataservice.service.getUsers()
+        let u = useridtxt.stringValue; let p = passwrdtext.stringValue
+        if u != "" && p != ""{
+            var access = AuthenticationService.main.retrieveAccount(username: u, password: p)
+            if access.0{
+                AgentID = u
+                ACCESS_LEVEL = AccessLevel.root.rawValue
+                Log.log(statement: "Successful log In with root priveldge", domain: nil)
+                log("Logged In as \(access.1!.rawValue)")
+                self.performSegue(withIdentifier: NSStoryboardSegue.Identifier("loggedIn"), sender: nil)
+
+            }else{
+                access = AuthenticationService.main.retrieveUserAccount(username: u, password: p)
+                if access.0{
+                    self.performSegue(withIdentifier: NSStoryboardSegue.Identifier("loggedIn"), sender: nil)
+                    AgentID = u
+                    ACCESS_LEVEL = AccessLevel.user.rawValue
+                    Log.log(statement: "Successful log In", domain: nil)
+                    log("Logged In as \(access.1!.rawValue)")
+                }else{
+                   alert(title: "Authentication Error", message: "Wrong User ID and Password")
+                    Log.log(statement: "Failed Log In attempt", domain: nil)
+                }
+            }
+        }else{
+            let alert = NSAlert()
+            alert.alertStyle = .warning
+            alert.informativeText = "Please enter user ID and Password"
+            alert.messageText = "Invalid User ID and password Fields"
+            alert.runModal()
+        }
+    }
+    
+    
+    override func prepare(for segue: NSStoryboardSegue, sender: Any?) {
+        
+    }
     
 }

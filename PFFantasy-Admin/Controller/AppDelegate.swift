@@ -15,7 +15,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        //Dataservice.service.getUsers()
+        //Dataservice.service.getTransactions()
+        AuthenticationService.main.createRootUser(username: "root", password: "12shady");
+        let alreadyRun = UserDefaults.standard.bool(forKey: FIRST_R)
+        if !alreadyRun{
+            UserDefaults.standard.set(1, forKey: QUESIDCOUNT)
+            UserDefaults.standard.set(true, forKey: FIRST_R)
+        }
         //Dataservice.service.postTofirebase(key: "Mandrake", data: ["hell":"Madness" as AnyObject], path: "http://localhost:3000/api/v1/NewUsers")
         // Insert code here to initialize your application
         SERIAL = getMachineSerial()

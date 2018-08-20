@@ -7,12 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38C1B26B2122C722001D76E5 /* CorrectCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C1B26A2122C722001D76E5 /* CorrectCells.swift */; };
+		38C1B26D2123721D001D76E5 /* EngineVCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C1B26C2123721D001D76E5 /* EngineVCells.swift */; };
+		38C1B26F21237739001D76E5 /* EngineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C1B26E21237739001D76E5 /* EngineVC.swift */; };
 		83B96314ACDB6614AE0DC2E1 /* Pods_PFFantasy_Admin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CE2A8213F6DCC2539E63420 /* Pods_PFFantasy_Admin.framework */; };
+		C412541E2038172F003AEA28 /* LogsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C412541D2038172F003AEA28 /* LogsVC.swift */; };
+		C41E8C3520EA8CBB00CED408 /* RegularQVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41E8C3420EA8CBB00CED408 /* RegularQVC.swift */; };
+		C41E8C3720EA9E6B00CED408 /* RegularCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41E8C3620EA9E6B00CED408 /* RegularCells.swift */; };
+		C41E8C3920EBD80B00CED408 /* CXFCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41E8C3820EBD80B00CED408 /* CXFCVC.swift */; };
 		C422C85B20373E8800C47276 /* AccountsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C422C85A20373E8800C47276 /* AccountsVC.swift */; };
 		C422C85D20373EBE00C47276 /* AccoutsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C422C85C20373EBE00C47276 /* AccoutsCell.swift */; };
 		C422C85F203740C600C47276 /* CXFEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = C422C85E203740C600C47276 /* CXFEnums.swift */; };
 		C422C861203765D000C47276 /* PreferenceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C422C860203765D000C47276 /* PreferenceVC.swift */; };
 		C422C8632037823C00C47276 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C422C8622037823C00C47276 /* Extensions.swift */; };
+		C45299F420387E66000C04C8 /* BLZQVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45299F220387E66000C04C8 /* BLZQVC.swift */; };
+		C45299F720387F85000C04C8 /* BLZQCELLS.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45299F620387F85000C04C8 /* BLZQCELLS.swift */; };
+		C45299F9203895B4000C04C8 /* QuesHelperVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45299F8203895B4000C04C8 /* QuesHelperVC.swift */; };
+		C467246F2121E48C00E0875A /* FantasyAnalyzerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C467246E2121E48C00E0875A /* FantasyAnalyzerVC.swift */; };
+		C47C98322115151700177D2E /* PFFantasyEngineModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47C98312115151700177D2E /* PFFantasyEngineModels.swift */; };
+		C47C98352115E0C300177D2E /* PFEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47C98342115E0C300177D2E /* PFEngine.swift */; };
 		C4A35AAE2035D15800C11C7D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A35AAD2035D15800C11C7D /* Constants.swift */; };
 		C4A35AB02035D21300C11C7D /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A35AAF2035D21300C11C7D /* Log.swift */; };
 		C4A35AB2203623E900C11C7D /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A35AB1203623E900C11C7D /* CoreDataService.swift */; };
@@ -31,13 +44,26 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		38C1B26A2122C722001D76E5 /* CorrectCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorrectCells.swift; sourceTree = "<group>"; };
+		38C1B26C2123721D001D76E5 /* EngineVCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineVCells.swift; sourceTree = "<group>"; };
+		38C1B26E21237739001D76E5 /* EngineVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineVC.swift; sourceTree = "<group>"; };
 		3CE2A8213F6DCC2539E63420 /* Pods_PFFantasy_Admin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PFFantasy_Admin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D50595F9407719CCF794563 /* Pods-PFFantasy-Admin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PFFantasy-Admin.release.xcconfig"; path = "Pods/Target Support Files/Pods-PFFantasy-Admin/Pods-PFFantasy-Admin.release.xcconfig"; sourceTree = "<group>"; };
+		C412541D2038172F003AEA28 /* LogsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogsVC.swift; sourceTree = "<group>"; };
+		C41E8C3420EA8CBB00CED408 /* RegularQVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularQVC.swift; sourceTree = "<group>"; };
+		C41E8C3620EA9E6B00CED408 /* RegularCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularCells.swift; sourceTree = "<group>"; };
+		C41E8C3820EBD80B00CED408 /* CXFCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CXFCVC.swift; sourceTree = "<group>"; };
 		C422C85A20373E8800C47276 /* AccountsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsVC.swift; sourceTree = "<group>"; };
 		C422C85C20373EBE00C47276 /* AccoutsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccoutsCell.swift; sourceTree = "<group>"; };
 		C422C85E203740C600C47276 /* CXFEnums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CXFEnums.swift; sourceTree = "<group>"; };
 		C422C860203765D000C47276 /* PreferenceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceVC.swift; sourceTree = "<group>"; };
 		C422C8622037823C00C47276 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C45299F220387E66000C04C8 /* BLZQVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLZQVC.swift; sourceTree = "<group>"; };
+		C45299F620387F85000C04C8 /* BLZQCELLS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLZQCELLS.swift; sourceTree = "<group>"; };
+		C45299F8203895B4000C04C8 /* QuesHelperVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuesHelperVC.swift; sourceTree = "<group>"; };
+		C467246E2121E48C00E0875A /* FantasyAnalyzerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FantasyAnalyzerVC.swift; sourceTree = "<group>"; };
+		C47C98312115151700177D2E /* PFFantasyEngineModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PFFantasyEngineModels.swift; sourceTree = "<group>"; };
+		C47C98342115E0C300177D2E /* PFEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PFEngine.swift; sourceTree = "<group>"; };
 		C4A35AAD2035D15800C11C7D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C4A35AAF2035D21300C11C7D /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		C4A35AB1203623E900C11C7D /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
@@ -80,6 +106,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		C47C98332115E07100177D2E /* FantasyEngine */ = {
+			isa = PBXGroup;
+			children = (
+				C47C98312115151700177D2E /* PFFantasyEngineModels.swift */,
+				C47C98342115E0C300177D2E /* PFEngine.swift */,
+			);
+			path = FantasyEngine;
+			sourceTree = "<group>";
+		};
 		C4A35AB520363CBF00C11C7D /* Sources */ = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +152,7 @@
 		C4E1CB6B20348F9B00BBED0B /* PFFantasy-Admin */ = {
 			isa = PBXGroup;
 			children = (
+				C47C98332115E07100177D2E /* FantasyEngine */,
 				C4A35AB520363CBF00C11C7D /* Sources */,
 				C4E1CB852034943200BBED0B /* Resources */,
 				C4E1CB842034942A00BBED0B /* Services */,
@@ -139,6 +175,13 @@
 				C4A35AB32036289400C11C7D /* Dashboard.swift */,
 				C422C85A20373E8800C47276 /* AccountsVC.swift */,
 				C422C860203765D000C47276 /* PreferenceVC.swift */,
+				C412541D2038172F003AEA28 /* LogsVC.swift */,
+				C45299F220387E66000C04C8 /* BLZQVC.swift */,
+				C45299F8203895B4000C04C8 /* QuesHelperVC.swift */,
+				C41E8C3420EA8CBB00CED408 /* RegularQVC.swift */,
+				C41E8C3820EBD80B00CED408 /* CXFCVC.swift */,
+				C467246E2121E48C00E0875A /* FantasyAnalyzerVC.swift */,
+				38C1B26E21237739001D76E5 /* EngineVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -149,6 +192,10 @@
 				C4E1CB7520348F9B00BBED0B /* Main.storyboard */,
 				C4AA51E52036C1B200F6D983 /* CustomView.swift */,
 				C422C85C20373EBE00C47276 /* AccoutsCell.swift */,
+				C45299F620387F85000C04C8 /* BLZQCELLS.swift */,
+				C41E8C3620EA9E6B00CED408 /* RegularCells.swift */,
+				38C1B26A2122C722001D76E5 /* CorrectCells.swift */,
+				38C1B26C2123721D001D76E5 /* EngineVCells.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -323,20 +370,33 @@
 			files = (
 				C4E1CB872034947400BBED0B /* AdminLoginVC.swift in Sources */,
 				C422C8632037823C00C47276 /* Extensions.swift in Sources */,
+				C41E8C3720EA9E6B00CED408 /* RegularCells.swift in Sources */,
+				C467246F2121E48C00E0875A /* FantasyAnalyzerVC.swift in Sources */,
 				C4A35AB42036289400C11C7D /* Dashboard.swift in Sources */,
+				C41E8C3920EBD80B00CED408 /* CXFCVC.swift in Sources */,
+				C47C98352115E0C300177D2E /* PFEngine.swift in Sources */,
 				C422C85F203740C600C47276 /* CXFEnums.swift in Sources */,
+				C41E8C3520EA8CBB00CED408 /* RegularQVC.swift in Sources */,
 				C4E1CB7220348F9B00BBED0B /* PFFantasy_Admin.xcdatamodeld in Sources */,
+				38C1B26F21237739001D76E5 /* EngineVC.swift in Sources */,
+				C45299F720387F85000C04C8 /* BLZQCELLS.swift in Sources */,
 				C4D4FDAE2035A6D4005EA125 /* KeyChainService.swift in Sources */,
 				C4E1CB6D20348F9B00BBED0B /* AppDelegate.swift in Sources */,
+				C45299F9203895B4000C04C8 /* QuesHelperVC.swift in Sources */,
 				C4AA51E82036D02000F6D983 /* FlatButton.swift in Sources */,
 				C422C85B20373E8800C47276 /* AccountsVC.swift in Sources */,
 				C4AA51E62036C1B200F6D983 /* CustomView.swift in Sources */,
 				C422C85D20373EBE00C47276 /* AccoutsCell.swift in Sources */,
+				38C1B26D2123721D001D76E5 /* EngineVCells.swift in Sources */,
 				C4A35AB2203623E900C11C7D /* CoreDataService.swift in Sources */,
 				C4AA51EC2036FCE900F6D983 /* Routes.swift in Sources */,
+				C45299F420387E66000C04C8 /* BLZQVC.swift in Sources */,
 				C4A35AB02035D21300C11C7D /* Log.swift in Sources */,
+				38C1B26B2122C722001D76E5 /* CorrectCells.swift in Sources */,
+				C47C98322115151700177D2E /* PFFantasyEngineModels.swift in Sources */,
 				C4E1CB802034910E00BBED0B /* CoredataStack.swift in Sources */,
 				C4A35AAE2035D15800C11C7D /* Constants.swift in Sources */,
+				C412541E2038172F003AEA28 /* LogsVC.swift in Sources */,
 				C422C861203765D000C47276 /* PreferenceVC.swift in Sources */,
 				C4AA51EB2036FCE900F6D983 /* Dataservice.swift in Sources */,
 			);

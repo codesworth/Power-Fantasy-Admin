@@ -10,6 +10,7 @@ import Cocoa
 
 class PreferenceVC: NSViewController {
 
+    @IBOutlet weak var deleteButton: FlatButton!
     @IBOutlet weak var cancel: FlatButton!
     @IBOutlet weak var addbutt: FlatButton!
     @IBOutlet weak var stackView: NSStackView!
@@ -25,6 +26,7 @@ class PreferenceVC: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         admins = []
+        title = "Preference"
         tableView.delegate = self
         tableView.dataSource = self
         admins = CoreService.service.fetchAdmins()
@@ -63,6 +65,7 @@ class PreferenceVC: NSViewController {
 
     @IBAction func viewLogsPressed(_ sender: FlatButton) {
         Log.log(statement: "Attempted Viewing Amin Logs", domain: nil)
+        performSegue(withIdentifier: NSStoryboardSegue.Identifier("Logger"), sender: nil)
     }
     
     @IBAction func confirm(_ sender: FlatButton) {
@@ -95,8 +98,16 @@ class PreferenceVC: NSViewController {
             }
         }
     }
+    @IBAction func deleteUserPressed(_ sender: Any) {
+        CoreDataStack.persistentContainer.viewContext.delete(selectedAdmin)
+        admins.remove(at: tableView.selectedRow)
+        CoreDataStack.saveContext()
+        tableView.reloadData()
+        deleteButton.isHidden = true
+    }
     
     @IBAction func cancel(_ sender: FlatButton) {
+
     }
 }
 
@@ -121,6 +132,7 @@ extension PreferenceVC: NSTableViewDelegate,NSTableViewDataSource {
     }
     
     func tableViewSelectionDidChange(_ notification: Notification) {
+        log("The index is \(tableView.selectedRow)")
         selectedAdmin = admins[tableView.selectedRow]
         username.stringValue = selectedAdmin.username!
         editingMode = true
@@ -128,6 +140,9 @@ extension PreferenceVC: NSTableViewDelegate,NSTableViewDataSource {
         addbutt.title = "Change Password"
         username.placeholderString = "Old Password"
         password.placeholderString = "New Password"
+        if ACCESS_LEVEL == AccessLevel.root.rawValue{
+            deleteButton.isHidden = false
+        }
         
 
         

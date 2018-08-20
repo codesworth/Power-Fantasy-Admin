@@ -39,11 +39,11 @@ class AuthenticationService {
         return status
     }
     
-    /*private func createRootUser(username:String, password:String){
+     func createRootUser(username:String, password:String){
         let kc = Keychain(service: AccessLevel.root.rawValue)
         kc[username] = password
         Swift.print("Succesfully created Root admin")
-    }*/
+    }
     
     func createUser(username:String, password:String){
         let kc = Keychain(service: AccessLevel.user.rawValue)
@@ -69,9 +69,11 @@ class AuthenticationService {
         let keychain = Keychain(service: AccessLevel.user.rawValue)
         do {
             let token =  try keychain.get(username)
+            Swift.print("The token is: ", token ?? "No Token");
             if token != nil{
                 if token! == password{
-                    return (true, AccessLevel.root)
+                    
+                    return (true, AccessLevel.user)
                 }else{
                     return (false,AccessLevel.noAccess)
                 }
@@ -86,7 +88,9 @@ class AuthenticationService {
     func retrieveAccount(username:String, password:String)->(Bool,AccessLevel?){
        let keychain = Keychain(service: AccessLevel.root.rawValue)
         do {
+            
              let token =  try keychain.get(username)
+            Swift.print("The token is: ", token ?? "No Token");
             if token != nil{
                 if token! == password{
                     return (true, AccessLevel.root)

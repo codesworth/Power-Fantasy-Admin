@@ -35,7 +35,7 @@ class AdminLoginVC: NSViewController {
     
     @IBAction func logInPressed(_ sender: NSButton) {
         Log.log(statement: "Attempted Log In", domain: nil)
-        Dataservice.service.getUsers()
+        
         let u = useridtxt.stringValue; let p = passwrdtext.stringValue
         if u != "" && p != ""{
             var access = AuthenticationService.main.retrieveAccount(username: u, password: p)
@@ -49,11 +49,12 @@ class AdminLoginVC: NSViewController {
             }else{
                 access = AuthenticationService.main.retrieveUserAccount(username: u, password: p)
                 if access.0{
-                    self.performSegue(withIdentifier: NSStoryboardSegue.Identifier("loggedIn"), sender: nil)
                     AgentID = u
+                    self.performSegue(withIdentifier: NSStoryboardSegue.Identifier("loggedIn"), sender: nil)
+                    
                     ACCESS_LEVEL = AccessLevel.user.rawValue
                     Log.log(statement: "Successful log In", domain: nil)
-                    log("Logged In as \(access.1!.rawValue)")
+                    log("Logged In as \(AgentID)")
                 }else{
                    alert(title: "Authentication Error", message: "Wrong User ID and Password")
                     Log.log(statement: "Failed Log In attempt", domain: nil)

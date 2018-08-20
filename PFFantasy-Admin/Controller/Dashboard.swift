@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import CoreData
 
 
 
@@ -19,23 +20,30 @@ class Dashboard: NSViewController {
     @IBOutlet weak var engine: NSButton!
     @IBOutlet weak var addcontest: NSButton!
     @IBOutlet weak var addquestions: NSButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         DECLAREDOMAIN(domain: LoggerDomain.dashboard)
         view.wantsLayer = true
-        username.stringValue = AgentID
+        CoreService.service.trimAllLeagues()
+        //saveColors()
         self.view.layer?.backgroundColor = NSColor.white.cgColor
         //setup()
         /*let logs = CoreService.service.fetchLogs()
         for alog in logs{
             log("\(alog!.agentID!) \(alog!.statement!) in \(alog!.domain!)")
         }*/
-        
+        //CoreService.service.fixdate()
     }
     
     override func viewDidLayout() {
         super.viewDidLayout()
         
+    }
+    
+    override func viewWillAppear() {
+        super.viewWillAppear()
+        username.stringValue = AgentID
     }
     
     func setup(){
@@ -44,35 +52,47 @@ class Dashboard: NSViewController {
         engine.setneedsLayer(); engine.bound(); engine.setShadow()
         addcontest.setneedsLayer(); addcontest.bound(); addcontest.setShadow()
         addquestions.setneedsLayer(); addquestions.bound(); addquestions.setShadow()
-        
-        /*let attributes =
-            [
-                NSAttributedStringKey.foregroundColor: NSColor.white,
-                NSAttributedStringKey.font: NSFont() ,
-                NSAttributedStringKey.paragraphStyle: NSMutableParagraphStyle()
-                ] as [NSAttributedStringKey : Any]
-        let atl = NSAttributedString(string: management.title, attributes: attributes)
-        management.attributedTitle = atl*/
+
         
     }
     
     @IBAction func AddquestionPressed(_ sender: FlatButton) {
+        performSegue(withIdentifier: NSStoryboardSegue.Identifier("QuesHelper"), sender: nil)
     }
     
     @IBAction func AddContestPressed(_ sender: FlatButton) {
+        performSegue(withIdentifier: NSStoryboardSegue.Identifier("Contests"), sender: nil)
     }
     @IBAction func EnginePressed(_ sender: FlatButton) {
+        performSegue(withIdentifier: NSStoryboardSegue.Identifier("TOENGINE"), sender: nil)
     }
     @IBAction func AccountsPressed(_ sender: FlatButton) {
         performSegue(withIdentifier: NSStoryboardSegue.Identifier("Accounts"), sender: nil)
     }
     @IBAction func ManagementPressed(_ sender: FlatButton) {
+        performSegue(withIdentifier: NSStoryboardSegue.Identifier("FantasyAnalyze"), sender: nil)
     }
     
     @IBAction func logoutPressed(_ sender: Any) {
-        dismiss(nil)
+        
         Log.log(statement: "Logged Out Admin Console", domain: nil)
         ACCESS_LEVEL = AccessLevel.noAccess.rawValue
+        dismiss(nil)
+    }
+    
+    
+    func saveColors(){
+        let allcolors = CoreService.service.fetchAllColors();
+        for item in allcolors {
+            CoreDataStack.persistentContainer.viewContext.delete(item)
+            CoreDataStack.saveContext();
+        }
+        for (key, color) in colors{
+            let colobj = TeamColor(context: CoreDataStack.persistentContainer.viewContext);
+            colobj.name = key
+            colobj.hexValue = color
+            CoreDataStack.saveContext()
+        }
     }
     
     

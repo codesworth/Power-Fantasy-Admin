@@ -29,7 +29,7 @@ class Log{
     }
 
     static func log(statement:String, domain:String?){
-        let log = Logger(context: CoreDataStack.persistentContainer.viewContext)
+        let log = Logs(context: CoreDataStack.persistentContainer.viewContext)
         log.date = Date()
         log.agentID = AgentID
         log.serial = SERIAL

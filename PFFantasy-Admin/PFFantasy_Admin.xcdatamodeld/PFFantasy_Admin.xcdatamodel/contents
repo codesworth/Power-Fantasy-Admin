@@ -1,11 +1,62 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14270.11" systemVersion="" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Admins" representedClassName="Admins" syncable="YES" codeGenerationType="class">
         <attribute name="accessLevel" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="uid" optional="YES" attributeType="UUID" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
-    <entity name="Logger" representedClassName="Logger" syncable="YES" codeGenerationType="class">
+    <entity name="BlazeQuestion" representedClassName="BlazeQuestion" syncable="YES" codeGenerationType="class">
+        <attribute name="choice" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="league" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="Contest" representedClassName="Contest" syncable="YES" codeGenerationType="class">
+        <attribute name="cap" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="contestType" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="fee" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="key" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="maxEntry" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="numberOfContestants" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="paymentType" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="priceMoney" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="questionID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sport" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="CorrectPicks" representedClassName="CorrectPicks" syncable="YES" codeGenerationType="class">
+        <attribute name="actuallPoints" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="contestType" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="correctOption" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="CXFAccountTransaction" representedClassName="CXFAccountTransaction" syncable="YES" codeGenerationType="class">
+        <attribute name="account" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="cluid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="finalDetail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ltrans" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="pMethod" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="transType" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="CXFCreditAccount" representedClassName="CXFCreditAccount" syncable="YES" codeGenerationType="class">
+        <attribute name="accountNo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="CXFLTransaction" representedClassName="CXFLTransaction" syncable="YES" codeGenerationType="class">
+        <attribute name="amount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="balance" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pin" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 16" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="Logs" representedClassName="Logs" syncable="YES" codeGenerationType="class">
         <attribute name="accesLevel" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="agentID" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="date" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
@@ -13,8 +64,26 @@
         <attribute name="serial" attributeType="String" syncable="YES"/>
         <attribute name="statement" attributeType="String" syncable="YES"/>
     </entity>
+    <entity name="RegularQuestions" representedClassName="RegularQuestions" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="league" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="options" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="TeamColor" representedClassName="TeamColor" syncable="YES" codeGenerationType="class">
+        <attribute name="hexValue" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <elements>
-        <element name="Logger" positionX="-63" positionY="-18" width="128" height="135"/>
         <element name="Admins" positionX="-63" positionY="27" width="128" height="90"/>
+        <element name="BlazeQuestion" positionX="45" positionY="153" width="128" height="105"/>
+        <element name="Contest" positionX="45" positionY="162" width="128" height="240"/>
+        <element name="CorrectPicks" positionX="45" positionY="171" width="128" height="120"/>
+        <element name="CXFAccountTransaction" positionX="45" positionY="153" width="128" height="180"/>
+        <element name="CXFCreditAccount" positionX="63" positionY="171" width="128" height="75"/>
+        <element name="CXFLTransaction" positionX="72" positionY="180" width="128" height="135"/>
+        <element name="Logs" positionX="160" positionY="192" width="128" height="135"/>
+        <element name="RegularQuestions" positionX="54" positionY="180" width="128" height="105"/>
+        <element name="TeamColor" positionX="45" positionY="171" width="128" height="75"/>
     </elements>
 </model>

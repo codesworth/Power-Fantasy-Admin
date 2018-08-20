@@ -31,8 +31,8 @@ enum LeagueType:String {
 }
 
 enum BlazeSegTypes:Int{
-    case typeOne = 1
-    case typeTwo = 2
+    case typeOne = 100
+    case typeTwo = 200
 }
 
 
@@ -77,6 +77,19 @@ enum CXFAnswerType:Int {
     case Normal = 1
     case Choice = 2
     case ThunderBolt = 3
+}
+
+enum ContestType:String {
+    case regular = "Regular"
+    case blaze = "Blaze"
+}
+
+enum ContestStatus:Int{
+    
+    case available = 40
+    case cappedOut = 45
+    case unsolved = 50
+    case expired = 60
 }
 
 

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:BlazeQuestion+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:BlazeQuestion+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
+      location = "group:PFFantasy-Admin/Model/CXFAccountTransaction+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:PFFantasy-Admin/Model/CXFAccountTransaction+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
+      location = "group:PFFantasy-Admin/Model/CXFCreditAccount+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:PFFantasy-Admin/Model/CXFCreditAccount+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
+      location = "group:PFFantasy-Admin/Model/CXFLTransaction+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:PFFantasy-Admin/Model/CXFLTransaction+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
+      location = "group:Logger+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:Logger+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
+      location = "group:PFFantasy-Admin.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

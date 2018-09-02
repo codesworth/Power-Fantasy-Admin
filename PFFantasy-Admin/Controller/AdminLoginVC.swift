@@ -18,6 +18,7 @@ class AdminLoginVC: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
+        
         DECLAREDOMAIN(domain: LoggerDomain.startup)
         
     }
@@ -69,6 +70,7 @@ class AdminLoginVC: NSViewController {
         }
     }
     
+    let sssss = "AMSHAHAH /23393993"
     
     override func prepare(for segue: NSStoryboardSegue, sender: Any?) {
         

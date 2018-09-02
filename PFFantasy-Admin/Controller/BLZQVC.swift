@@ -33,8 +33,6 @@ class BLZQVC: NSViewController {
     @IBAction func uploadPressed(_ sender: FlatButton) {
         Dataservice.service.uploadQuestion(questionID.stringValue, json) { (succes, err, extra) in
             if (succes){
-                alert(title: "Question Set Succesfully Uploaded", message: extra)
-                //choices.removeValue(forKey: _LEAGUE_TYPE)
                 let blaze = BlazeQuestion(context: CoreDataStack.persistentContainer.viewContext)
                 blaze.timestamp = self.expDate.dateValue.unixTimestamp()
                 blaze.id = self.questionID.stringValue
@@ -42,6 +40,9 @@ class BLZQVC: NSViewController {
                 blaze.league = self.league
                 CoreDataStack.saveContext()
                 incrementQNum()
+                alert(title: "Question Set Succesfully Uploaded", message: extra)
+                //choices.removeValue(forKey: _LEAGUE_TYPE)
+                
             }else{
                 alert(title: "Fatal Error", message: "There was a problem uploading Question Set")
             }

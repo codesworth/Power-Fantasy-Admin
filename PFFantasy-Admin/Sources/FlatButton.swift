@@ -45,7 +45,9 @@ open class FlatButton: NSButton, CALayerDelegate {
         didSet {
             animateColor(state == .on)
         }
+        
     }
+    
     @IBInspectable public var onAnimationDuration: Double = 0
     @IBInspectable public var offAnimationDuration: Double = 0.1
     @IBInspectable public var glowRadius: CGFloat = 0 {
@@ -192,6 +194,8 @@ open class FlatButton: NSButton, CALayerDelegate {
         titleLayer.fontSize = font.pointSize
         positionTitleAndImage()
     }
+    
+    
     
     func positionTitleAndImage() {
         let attributes = [NSAttributedStringKey.font: font as Any]

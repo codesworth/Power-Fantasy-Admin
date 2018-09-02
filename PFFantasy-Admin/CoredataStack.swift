@@ -41,6 +41,10 @@ class CoreDataStack{
         return container
     }()
     
+    static func getContext()->NSManagedObjectContext{
+        return persistentContainer.viewContext
+    }
+    
     // MARK: - Core Data Saving and Undo support
     
     static func saveContext(){

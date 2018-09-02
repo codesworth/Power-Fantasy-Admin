@@ -12,6 +12,7 @@ import Alamofire
 typealias JSON = Dictionary<String,AnyObject>
 
 typealias FetchedPicksCompletion = ()->()
+typealias CompletionHandler = (_ success:Bool, _ err:Error?, _ data:Any?)->()
 
 class Dataservice{
     
@@ -27,11 +28,10 @@ class Dataservice{
         }
     }
     
-    func getUsers(){
-        let url = URL(string:"http://localhost:3000/api/v1/NewUsers")
-        Alamofire.request(url!, method: HTTPMethod.get, parameters: nil, encoding: JSONEncoding.default, headers: nil).validate().responseJSON { (resp) in
-            log(resp.debugDescription)
-        
+    func getNewUsers(handler:@escaping CompletionHandler){
+        let url:URLConvertible = URL(string: URL_FETCH_NEWPLAYERS)!
+        Alamofire.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil).validate().responseJSON { (response) in
+            handler(response.result.isSuccess,response.result.error,response.result.value)
         }
     }
     
@@ -57,6 +57,32 @@ class Dataservice{
                 handler(true, nil,response.result.description)
                 Swift.print("Succesfully poasted: ", response.result.debugDescription)
             }
+        }
+    }
+    
+    func updateIndexed(data:[String], handler:@escaping(CompletionHandler)){
+        let url:URLConvertible = URL(string: URL_UPDATE_INDEXED)!
+        let param = ["data":data] as [String : Any];
+        
+        Alamofire.request(url, method: .post, parameters:param, encoding: JSONEncoding.default, headers: nil).validate().responseJSON { (response) in
+            if response.result.isSuccess {
+                handler(true, nil,response.result.description)
+                
+            }
+            handler(response.result.isSuccess,response.error,nil)
+        }
+    }
+    
+    func updateContestWinnersAccounts( _ data:Extras, handler:@escaping CompletionHandler){
+        let url:URLConvertible = URL(string: URL_UPDATE_ACCOUNTS_ON_SERVER)!
+        let param = ["data":data]
+        
+        Alamofire.request(url, method: .post, parameters:param, encoding: JSONEncoding.default, headers: nil).validate().responseJSON { (response) in
+            handler(response.result.isSuccess, response.error,response.result.description)
+            
+            
+            Swift.print("Succesfully poasted: ", response.result.debugDescription)
+            
         }
     }
     
@@ -94,11 +120,33 @@ class Dataservice{
             if let data = response.value as? Extras{
                 log(data.debugDescription)
                 for (key, value) in data{
-                    CoreService.service.makeTransaction(key, value)
+                    CoreDatabase.service.makeTransaction(key, value)
                 }
             }
         }
     }
+    
+    
+    func getAccounts(handler:@escaping CompletionHandler){
+        let url:URLConvertible = URL(string: URL_GET_ALL_ACCOUNTS)!
+        Alamofire.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil).validate().responseJSON { (response) in
+            if let data = response.value as? Extras{
+                log(data.debugDescription)
+                handler(response.result.isSuccess,response.result.error,response.result.value)
+            }
+        }
+    }
+    
+    func toggleAccountMutability(canMutate:Bool, handler:@escaping(_ success:Bool, _ err:Error?, _ data:Any?)->()){
+        let url:URLConvertible = URL(string: URL_ACCOUNT_MUTATE)!
+        let data = ["data":[FIELD_UTILITY_ACC_SERVER_EDITING:canMutate]]
+        Alamofire.request(url, method: .post, parameters: data, encoding: JSONEncoding.default, headers: nil).validate().responseJSON { (response) in
+            handler(response.result.isSuccess,response.result.error,response.result.value)
+        }
+        
+    }
+    
+    
     
     
     
@@ -106,7 +154,7 @@ class Dataservice{
     func getAllPicks(handler:@escaping(_ success:Bool, _ err:Error?, _ data:Any? )->()){
          let url:URLConvertible = URL(string: URL_GET_ALL_PICKS)!
         Alamofire.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil).validate().responseJSON { (dataresponse) in
-            log("We git here");
+            
             print(dataresponse)
             handler(dataresponse.result.isSuccess, dataresponse.result.error, dataresponse.result.value)
             

@@ -26,7 +26,7 @@ class FantasyAnalyzerVC:NSViewController,NSTableViewDelegate,NSTableViewDataSour
         availableQuestions = []
         allActualScores = [:]
         contentToUpload = [:]
-        availableQuestions = CoreService.service.fetchRegular()
+        availableQuestions = CoreDatabase.service.fetchRegular()
         tableView.delegate = self
         tableView.dataSource = self
         correcttableView.delegate = self
@@ -79,11 +79,11 @@ class FantasyAnalyzerVC:NSViewController,NSTableViewDelegate,NSTableViewDataSour
         if let seg = sender as? NSSegmentedControl{
             if seg.selectedSegment == 0{
                 availableQuestions.removeAll()
-                availableQuestions = CoreService.service.fetchRegular()
+                availableQuestions = CoreDatabase.service.fetchRegular()
                 tableView.reloadData()
             }else if seg.selectedSegment == 1{
                 availableQuestions.removeAll()
-                availableQuestions = CoreService.service.fetchBlaze()
+                availableQuestions = CoreDatabase.service.fetchBlaze()
                 tableView.reloadData()
             }
         }

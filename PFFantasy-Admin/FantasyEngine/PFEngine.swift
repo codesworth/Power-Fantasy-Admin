@@ -17,12 +17,12 @@ class PFEngine {
         return _mainEngine
     }
     
-    func makeConsumable(largeData:Extras)->[FantasyConsumable]{
-        var retdata:[FantasyConsumable] = []
+    func makeConsumable(largeData:Extras)->[String:FantasyConsumable]{
+        var retdata:[String:FantasyConsumable] = [:]
         for (key, value) in largeData{
             if let value = value as? Extras{
                 let fsc = FantasyConsumable(key: key, rawdata: value)
-                retdata.append(fsc)
+                retdata[fsc.id] = fsc
             }
         }
         return retdata
@@ -34,10 +34,42 @@ class PFEngine {
         
         
     }
+    func engineContestWinners(key:String, positioning:[String:Positioning]) ->[String:Positioning]{
+        var newd:[String:Positioning] = [:]
+        for (key,value) in positioning {
+            if (value.wins < 1){}else{
+               newd[key] = value
+            }
+        }
+        return newd
+    }
+    func engineMakeContestPayments(key:String, positioning:[String:PFPositioning])->ContestPayments{
+        var retval:[String:Double] = [:]
+        for (_,value) in positioning {
+            if (value.wins < 1){}else{
+                var mywins = retval[value.playerid] ?? 0.0
+                mywins += value.wins
+                retval[value.playerid] = mywins
+            }
+        }
+        var allPayables:[String:PFPositioning] = [:]
+        for(key, value) in positioning{
+            if(value.wins > 0){
+                allPayables[key] = value
+            }
+        }
+        let pay = ContestPayments(key:key , ledger: retval, allPayables: allPayables)
+        return pay
+        
+    }
+    
+    func enginemakeAccountPayments(){
+        
+    }
     
     func engineStart(consumable:FantasyConsumable, rightPick:EngineCorrectPicks)->Leaderboard{
         let allPicks = consumable.allPicks
-        var positioningArray:Array<Positioning> = [];
+        var positioningArray:Array<PFPositioning> = [];
         let totalshares = Double(allPicks.count) * consumable.contest.fee
         if consumable.contest.contestType == CONTEST_REGULAR {
             for aPick in allPicks{
@@ -63,15 +95,15 @@ class PFEngine {
         
     }
     
-    private func engineSortPositions(positions:[Positioning])->[String:Positioning]{
+    private func engineSortPositions(positions:[PFPositioning])->[String:PFPositioning]{
         
         let sorted = positions.sorted(by: {$0.points > $1.points})
         let nsarray = NSArray(array: sorted)
         
-        var sortedobjs:[String:Positioning] = [:]
+        var sortedobjs:[String:PFPositioning] = [:]
         for obj in nsarray {
             let pos = nsarray.index(of: obj) + 1
-            sortedobjs["\(pos)"] = obj as? Positioning
+            sortedobjs["\(pos)"] = obj as? PFPositioning
             
         }
         
@@ -84,7 +116,7 @@ class PFEngine {
         return sortedobjs
     }
     
-    private func engineBlockWorkRegular(rightPick:EngineCorrectPicks,pick:PFPicks)->Positioning{
+    private func engineBlockWorkRegular(rightPick:EngineCorrectPicks,pick:PFPicks)->PFPositioning{
         //if pick.validates(){}else{return}
         var consolidatedpoints = 0
         let totalPoints = pick.selectedPoints
@@ -101,12 +133,12 @@ class PFEngine {
                 consolidatedpoints = consolidatedpoints + point
             }else{}
         }
-        let ps = Positioning(playerid: pick.playerID,points: consolidatedpoints,username: pick.username)
+        let ps = PFPositioning(playerid: pick.playerID,points: consolidatedpoints,username: pick.username,pickid: pick.key)
         return ps
         
     }
     
-    private func engineBlockWorkBlaze(rightPick:EngineCorrectPicks,pick:PFPicks)->Positioning{
+    private func engineBlockWorkBlaze(rightPick:EngineCorrectPicks,pick:PFPicks)->PFPositioning{
         //if pick.validates(){}else{return}
         var consolidatedpoints = 0
         var numberOfWins = 0
@@ -122,15 +154,15 @@ class PFEngine {
             }else{}
         }
         consolidatedpoints = consolidatedpoints + numberOfWins
-        let ps = Positioning(playerid: pick.playerID,points: consolidatedpoints,username: pick.username)
+        let ps = PFPositioning(playerid: pick.playerID,points: consolidatedpoints,username: pick.username, pickid: pick.key)
         return ps
         
     }
     
     
-    private func findandSetWinnings(sortedPositions:[String:Positioning], totalshare:Double)->[String:Positioning]{
+    private func findandSetWinnings(sortedPositions:[String:PFPositioning], totalshare:Double)->[String:PFPositioning]{
         let size = sortedPositions.count
-        var newSorted:[String:Positioning] = [:]
+        var newSorted:[String:PFPositioning] = [:]
         for (key, item) in sortedPositions{
             let plce = item.relativePositon - 1
             if plce > -1 {
@@ -217,6 +249,7 @@ class PFEngine {
             return 0.0
         }
     }
+        
     
 }
 

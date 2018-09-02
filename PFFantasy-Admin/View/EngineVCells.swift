@@ -38,7 +38,7 @@ class LeaderBoardCells:NSTableCellView{
         super.awakeFromNib()
     }
     
-    func configureTable(item:Positioning){
+    func configureTable(item:PFPositioning){
         position.stringValue = "\(item.relativePositon)"
         username.stringValue = "\(item.username)/\(item.points)"
         winnings.stringValue = "GHS\(item.wins)"

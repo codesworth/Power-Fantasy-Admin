@@ -15,6 +15,7 @@
 		C41E8C3520EA8CBB00CED408 /* RegularQVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41E8C3420EA8CBB00CED408 /* RegularQVC.swift */; };
 		C41E8C3720EA9E6B00CED408 /* RegularCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41E8C3620EA9E6B00CED408 /* RegularCells.swift */; };
 		C41E8C3920EBD80B00CED408 /* CXFCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41E8C3820EBD80B00CED408 /* CXFCVC.swift */; };
+		C421774A213ABAD50094218C /* PFFantasy_AdminTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4217749213ABAD50094218C /* PFFantasy_AdminTests.swift */; };
 		C422C85B20373E8800C47276 /* AccountsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C422C85A20373E8800C47276 /* AccountsVC.swift */; };
 		C422C85D20373EBE00C47276 /* AccoutsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C422C85C20373EBE00C47276 /* AccoutsCell.swift */; };
 		C422C85F203740C600C47276 /* CXFEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = C422C85E203740C600C47276 /* CXFEnums.swift */; };
@@ -34,6 +35,7 @@
 		C4AA51E82036D02000F6D983 /* FlatButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AA51E72036D02000F6D983 /* FlatButton.swift */; };
 		C4AA51EB2036FCE900F6D983 /* Dataservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AA51E92036FCE800F6D983 /* Dataservice.swift */; };
 		C4AA51EC2036FCE900F6D983 /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AA51EA2036FCE900F6D983 /* Routes.swift */; };
+		C4C10B48213332FD00495494 /* AccountsUpdatesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C10B47213332FD00495494 /* AccountsUpdatesVC.swift */; };
 		C4D4FDAE2035A6D4005EA125 /* KeyChainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D4FDAD2035A6D4005EA125 /* KeyChainService.swift */; };
 		C4E1CB6D20348F9B00BBED0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E1CB6C20348F9B00BBED0B /* AppDelegate.swift */; };
 		C4E1CB7220348F9B00BBED0B /* PFFantasy_Admin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C4E1CB7020348F9B00BBED0B /* PFFantasy_Admin.xcdatamodeld */; };
@@ -42,6 +44,16 @@
 		C4E1CB802034910E00BBED0B /* CoredataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E1CB7F2034910E00BBED0B /* CoredataStack.swift */; };
 		C4E1CB872034947400BBED0B /* AdminLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E1CB862034947400BBED0B /* AdminLoginVC.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C421774C213ABAD50094218C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4E1CB6120348F9B00BBED0B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4E1CB6820348F9B00BBED0B;
+			remoteInfo = "PFFantasy-Admin";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		38C1B26A2122C722001D76E5 /* CorrectCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorrectCells.swift; sourceTree = "<group>"; };
@@ -53,6 +65,9 @@
 		C41E8C3420EA8CBB00CED408 /* RegularQVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularQVC.swift; sourceTree = "<group>"; };
 		C41E8C3620EA9E6B00CED408 /* RegularCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularCells.swift; sourceTree = "<group>"; };
 		C41E8C3820EBD80B00CED408 /* CXFCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CXFCVC.swift; sourceTree = "<group>"; };
+		C4217747213ABAD50094218C /* PFFantasy-AdminTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PFFantasy-AdminTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4217749213ABAD50094218C /* PFFantasy_AdminTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PFFantasy_AdminTests.swift; sourceTree = "<group>"; };
+		C421774B213ABAD50094218C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C422C85A20373E8800C47276 /* AccountsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsVC.swift; sourceTree = "<group>"; };
 		C422C85C20373EBE00C47276 /* AccoutsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccoutsCell.swift; sourceTree = "<group>"; };
 		C422C85E203740C600C47276 /* CXFEnums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CXFEnums.swift; sourceTree = "<group>"; };
@@ -72,6 +87,7 @@
 		C4AA51E72036D02000F6D983 /* FlatButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlatButton.swift; sourceTree = "<group>"; };
 		C4AA51E92036FCE800F6D983 /* Dataservice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dataservice.swift; sourceTree = "<group>"; };
 		C4AA51EA2036FCE900F6D983 /* Routes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
+		C4C10B47213332FD00495494 /* AccountsUpdatesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsUpdatesVC.swift; sourceTree = "<group>"; };
 		C4D4FDAD2035A6D4005EA125 /* KeyChainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainService.swift; sourceTree = "<group>"; };
 		C4E1CB6920348F9B00BBED0B /* PFFantasy-Admin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PFFantasy-Admin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4E1CB6C20348F9B00BBED0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +102,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C4217744213ABAD50094218C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C4E1CB6620348F9B00BBED0B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -104,6 +127,15 @@
 				5D50595F9407719CCF794563 /* Pods-PFFantasy-Admin.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		C4217748213ABAD50094218C /* PFFantasy-AdminTests */ = {
+			isa = PBXGroup;
+			children = (
+				C4217749213ABAD50094218C /* PFFantasy_AdminTests.swift */,
+				C421774B213ABAD50094218C /* Info.plist */,
+			);
+			path = "PFFantasy-AdminTests";
 			sourceTree = "<group>";
 		};
 		C47C98332115E07100177D2E /* FantasyEngine */ = {
@@ -135,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				C4E1CB6B20348F9B00BBED0B /* PFFantasy-Admin */,
+				C4217748213ABAD50094218C /* PFFantasy-AdminTests */,
 				C4E1CB6A20348F9B00BBED0B /* Products */,
 				118B7F66D0B9288D0F909475 /* Pods */,
 				D651E10E47929BCBB498714B /* Frameworks */,
@@ -145,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				C4E1CB6920348F9B00BBED0B /* PFFantasy-Admin.app */,
+				C4217747213ABAD50094218C /* PFFantasy-AdminTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -182,6 +216,7 @@
 				C41E8C3820EBD80B00CED408 /* CXFCVC.swift */,
 				C467246E2121E48C00E0875A /* FantasyAnalyzerVC.swift */,
 				38C1B26E21237739001D76E5 /* EngineVC.swift */,
+				C4C10B47213332FD00495494 /* AccountsUpdatesVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -241,6 +276,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		C4217746213ABAD50094218C /* PFFantasy-AdminTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C421774E213ABAD50094218C /* Build configuration list for PBXNativeTarget "PFFantasy-AdminTests" */;
+			buildPhases = (
+				C4217743213ABAD50094218C /* Sources */,
+				C4217744213ABAD50094218C /* Frameworks */,
+				C4217745213ABAD50094218C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C421774D213ABAD50094218C /* PBXTargetDependency */,
+			);
+			name = "PFFantasy-AdminTests";
+			productName = "PFFantasy-AdminTests";
+			productReference = C4217747213ABAD50094218C /* PFFantasy-AdminTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		C4E1CB6820348F9B00BBED0B /* PFFantasy-Admin */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4E1CB7C20348F9B00BBED0B /* Build configuration list for PBXNativeTarget "PFFantasy-Admin" */;
@@ -267,10 +320,15 @@
 		C4E1CB6120348F9B00BBED0B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0920;
+				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Mensah Shadrach";
 				TargetAttributes = {
+					C4217746213ABAD50094218C = {
+						CreatedOnToolsVersion = 10.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C4E1CB6820348F9B00BBED0B;
+					};
 					C4E1CB6820348F9B00BBED0B = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -291,11 +349,19 @@
 			projectRoot = "";
 			targets = (
 				C4E1CB6820348F9B00BBED0B /* PFFantasy-Admin */,
+				C4217746213ABAD50094218C /* PFFantasy-AdminTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		C4217745213ABAD50094218C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C4E1CB6720348F9B00BBED0B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -364,11 +430,20 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		C4217743213ABAD50094218C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C421774A213ABAD50094218C /* PFFantasy_AdminTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C4E1CB6520348F9B00BBED0B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C4E1CB872034947400BBED0B /* AdminLoginVC.swift in Sources */,
+				C4C10B48213332FD00495494 /* AccountsUpdatesVC.swift in Sources */,
 				C422C8632037823C00C47276 /* Extensions.swift in Sources */,
 				C41E8C3720EA9E6B00CED408 /* RegularCells.swift in Sources */,
 				C467246F2121E48C00E0875A /* FantasyAnalyzerVC.swift in Sources */,
@@ -404,6 +479,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		C421774D213ABAD50094218C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4E1CB6820348F9B00BBED0B /* PFFantasy-Admin */;
+			targetProxy = C421774C213ABAD50094218C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		C4E1CB7520348F9B00BBED0B /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -416,6 +499,49 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		C421774F213ABAD50094218C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = MB46J93Q7Z;
+				INFOPLIST_FILE = "PFFantasy-AdminTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.codesworth.PFFantasy-AdminTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PFFantasy-Admin.app/Contents/MacOS/PFFantasy-Admin";
+			};
+			name = Debug;
+		};
+		C4217750213ABAD50094218C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = MB46J93Q7Z;
+				INFOPLIST_FILE = "PFFantasy-AdminTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.codesworth.PFFantasy-AdminTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PFFantasy-Admin.app/Contents/MacOS/PFFantasy-Admin";
+			};
+			name = Release;
+		};
 		C4E1CB7A20348F9B00BBED0B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -561,6 +687,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C421774E213ABAD50094218C /* Build configuration list for PBXNativeTarget "PFFantasy-AdminTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C421774F213ABAD50094218C /* Debug */,
+				C4217750213ABAD50094218C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C4E1CB6420348F9B00BBED0B /* Build configuration list for PBXProject "PFFantasy-Admin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

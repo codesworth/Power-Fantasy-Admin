@@ -143,7 +143,7 @@ class BLZQCELLS: NSTableCellView {
 extension BLZQCELLS: NSComboBoxDelegate, NSComboBoxDataSource, NSControlTextEditingDelegate{
     func setUpColors(){
         colorNames = []
-        colors = CoreService.service.fetchAllColors();
+        colors = CoreDatabase.service.fetchAllColors();
         for item in colors {
             colorNames.append(item.name!)
         }

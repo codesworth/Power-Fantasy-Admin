@@ -21,7 +21,7 @@ class LogsVC: NSViewController {
     
     override func viewWillAppear() {
         super.viewWillAppear()
-        allLogs = CoreService.service.fetchLogs()
+        allLogs = CoreDatabase.service.fetchLogs()
         tableView.reloadData()
     }
     

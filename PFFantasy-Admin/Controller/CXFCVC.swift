@@ -119,11 +119,18 @@ class CXFCVC: NSViewController, NSTableViewDelegate,NSTableViewDataSource {
     @IBAction func contestTypeSelected(_ sender: Any) {
         if let combo =  sender as? NSComboBox{
             if combo.stringValue == ContestType.regular.rawValue{
-                availableQuestions = CoreService.service.fetchRegular()
+                availableQuestions = CoreDatabase.service.fetchRegular()
                 tableView.reloadData()
                 
             }else if combo.stringValue == ContestType.blaze.rawValue{
-                availableQuestions = CoreService.service.fetchBlaze()
+                availableQuestions = CoreDatabase.service.fetchBlaze()
+                if keyTextField.stringValue == ""{
+                    let id = "B".appending(String(Date().unixTimestamp()))
+                    keyTextField.stringValue = id
+                }else{
+                    let id = "B".appending(keyTextField.stringValue)
+                    keyTextField.stringValue = id
+                }
                 tableView.reloadData()
                 
             }

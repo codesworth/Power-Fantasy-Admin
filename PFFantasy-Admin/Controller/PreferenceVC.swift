@@ -29,7 +29,7 @@ class PreferenceVC: NSViewController {
         title = "Preference"
         tableView.delegate = self
         tableView.dataSource = self
-        admins = CoreService.service.fetchAdmins()
+        admins = CoreDatabase.service.fetchAdmins()
         DECLAREDOMAIN(domain: LoggerDomain.preferencePain)
         Log.log(statement: "Prefernce Pane launched", domain: nil)
         stackView.isHidden = true

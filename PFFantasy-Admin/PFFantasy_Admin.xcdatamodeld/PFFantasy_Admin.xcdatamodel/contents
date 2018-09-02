@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14270.11" systemVersion="" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14315.12.1" systemVersion="18A371a" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AccountChanges" representedClassName="AccountChanges" syncable="YES" codeGenerationType="class">
+        <attribute name="accessLevel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="agentID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isCommitted" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="actualChanges" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="UnitAccountChange" syncable="YES"/>
+    </entity>
     <entity name="Admins" representedClassName="Admins" syncable="YES" codeGenerationType="class">
         <attribute name="accessLevel" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="uid" optional="YES" attributeType="UUID" usesScalarValueType="NO" syncable="YES"/>
@@ -25,6 +32,8 @@
         <attribute name="status" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="timestamp" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="leaderboard" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Leaderboards" inverseName="contest" inverseEntity="Leaderboards" syncable="YES"/>
+        <relationship name="predictionPicks" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Picks" syncable="YES"/>
     </entity>
     <entity name="CorrectPicks" representedClassName="CorrectPicks" syncable="YES" codeGenerationType="class">
         <attribute name="actuallPoints" optional="YES" attributeType="Transformable" syncable="YES"/>
@@ -33,28 +42,40 @@
         <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="timestamp" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
     </entity>
-    <entity name="CXFAccountTransaction" representedClassName="CXFAccountTransaction" syncable="YES" codeGenerationType="class">
-        <attribute name="account" optional="YES" attributeType="Transformable" syncable="YES"/>
+    <entity name="CXFCreditAccount" representedClassName="CXFCreditAccount" syncable="YES" codeGenerationType="class">
+        <attribute name="accountNo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="accountPhone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="accountUserID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="aggregatedCredit" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="aggregatedGains" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="aggregatedLosses" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="balance" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="lastUpdated" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="lifetimePoints" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="mutated" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="virtualCoins" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="player" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Players" inverseName="creditAccount" inverseEntity="Players" syncable="YES"/>
+    </entity>
+    <entity name="CXTransaction" representedClassName="CXTransaction" syncable="YES" codeGenerationType="class">
+        <attribute name="accountId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="amount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="balance" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="cluid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="currencyType" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="finalDetail" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="ltrans" optional="YES" attributeType="Transformable" syncable="YES"/>
-        <attribute name="pMethod" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="state" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="transType" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="indexed" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="transactionMode" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="transactionType" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
     </entity>
-    <entity name="CXFCreditAccount" representedClassName="CXFCreditAccount" syncable="YES" codeGenerationType="class">
-        <attribute name="accountNo" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-    </entity>
-    <entity name="CXFLTransaction" representedClassName="CXFLTransaction" syncable="YES" codeGenerationType="class">
-        <attribute name="amount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="balance" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
-        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="pin" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="type" optional="YES" attributeType="Integer 16" usesScalarValueType="YES" syncable="YES"/>
+    <entity name="Leaderboards" representedClassName="Leaderboards" syncable="YES" codeGenerationType="class">
+        <attribute name="contestID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="positioning" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <relationship name="contest" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Contest" inverseName="leaderboard" inverseEntity="Contest" syncable="YES"/>
+        <relationship name="positionings" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Positioning" syncable="YES"/>
     </entity>
     <entity name="Logs" representedClassName="Logs" syncable="YES" codeGenerationType="class">
         <attribute name="accesLevel" optional="YES" attributeType="String" syncable="YES"/>
@@ -63,6 +84,28 @@
         <attribute name="domain" attributeType="String" syncable="YES"/>
         <attribute name="serial" attributeType="String" syncable="YES"/>
         <attribute name="statement" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Picks" representedClassName="Picks" syncable="YES" codeGenerationType="class">
+        <attribute name="contestKey" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pickId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="picks" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="playerUid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="selectedPoints" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Players" representedClassName="Players" syncable="YES" codeGenerationType="class">
+        <attribute name="created" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="uid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="creditAccount" maxCount="1" deletionRule="Nullify" destinationEntity="CXFCreditAccount" inverseName="player" inverseEntity="CXFCreditAccount" syncable="YES"/>
+    </entity>
+    <entity name="Positioning" representedClassName="Positioning" syncable="YES" codeGenerationType="class">
+        <attribute name="pickId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="playerId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="points" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="relativePosition" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wins" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
     </entity>
     <entity name="RegularQuestions" representedClassName="RegularQuestions" syncable="YES" codeGenerationType="class">
         <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
@@ -74,16 +117,28 @@
         <attribute name="hexValue" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
+    <entity name="UnitAccountChange" representedClassName="UnitAccountChange" syncable="YES" codeGenerationType="class">
+        <attribute name="accountNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="accountUserId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="after" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="before" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
     <elements>
+        <element name="AccountChanges" positionX="-135" positionY="117" width="128" height="120"/>
         <element name="Admins" positionX="-63" positionY="27" width="128" height="90"/>
         <element name="BlazeQuestion" positionX="45" positionY="153" width="128" height="105"/>
-        <element name="Contest" positionX="45" positionY="162" width="128" height="240"/>
-        <element name="CorrectPicks" positionX="45" positionY="171" width="128" height="120"/>
-        <element name="CXFAccountTransaction" positionX="45" positionY="153" width="128" height="180"/>
-        <element name="CXFCreditAccount" positionX="63" positionY="171" width="128" height="75"/>
-        <element name="CXFLTransaction" positionX="72" positionY="180" width="128" height="135"/>
-        <element name="Logs" positionX="160" positionY="192" width="128" height="135"/>
-        <element name="RegularQuestions" positionX="54" positionY="180" width="128" height="105"/>
-        <element name="TeamColor" positionX="45" positionY="171" width="128" height="75"/>
+        <element name="Contest" positionX="-338.828125" positionY="356.9453125" width="128" height="30"/>
+        <element name="CorrectPicks" positionX="-50.17578125" positionY="456.3125" width="128" height="120"/>
+        <element name="CXTransaction" positionX="-259.625" positionY="139.9609375" width="128" height="225"/>
+        <element name="CXFCreditAccount" positionX="214.3046875" positionY="372.62890625" width="128" height="240"/>
+        <element name="Logs" positionX="321.234375" positionY="148.015625" width="128" height="135"/>
+        <element name="Players" positionX="161.33984375" positionY="-37.71875" width="128" height="105"/>
+        <element name="RegularQuestions" positionX="-297.6640625" positionY="-11.73046875" width="128" height="105"/>
+        <element name="TeamColor" positionX="-192.578125" positionY="391.62109375" width="128" height="75"/>
+        <element name="UnitAccountChange" positionX="-126" positionY="126" width="128" height="120"/>
+        <element name="Leaderboards" positionX="-135" positionY="117" width="128" height="30"/>
+        <element name="Positioning" positionX="-126" positionY="126" width="128" height="30"/>
+        <element name="Picks" positionX="-117" positionY="144" width="128" height="30"/>
     </elements>
 </model>

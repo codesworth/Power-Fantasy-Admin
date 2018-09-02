@@ -10,7 +10,6 @@ import Cocoa
 import CoreData
 
 
-
 class Dashboard: NSViewController {
 
     @IBOutlet weak var username: NSTextField!
@@ -21,11 +20,13 @@ class Dashboard: NSViewController {
     @IBOutlet weak var addcontest: NSButton!
     @IBOutlet weak var addquestions: NSButton!
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         DECLAREDOMAIN(domain: LoggerDomain.dashboard)
         view.wantsLayer = true
-        CoreService.service.trimAllLeagues()
+        CoreDatabase.service.trimAllLeagues()
         //saveColors()
         self.view.layer?.backgroundColor = NSColor.white.cgColor
         //setup()
@@ -63,12 +64,18 @@ class Dashboard: NSViewController {
     @IBAction func AddContestPressed(_ sender: FlatButton) {
         performSegue(withIdentifier: NSStoryboardSegue.Identifier("Contests"), sender: nil)
     }
+    
     @IBAction func EnginePressed(_ sender: FlatButton) {
         performSegue(withIdentifier: NSStoryboardSegue.Identifier("TOENGINE"), sender: nil)
     }
+    
     @IBAction func AccountsPressed(_ sender: FlatButton) {
-        performSegue(withIdentifier: NSStoryboardSegue.Identifier("Accounts"), sender: nil)
+        
+        
+        //performSegue(withIdentifier:
+        //NSStoryboardSegue.Identifier("Accounts"), sender: nil)
     }
+    
     @IBAction func ManagementPressed(_ sender: FlatButton) {
         performSegue(withIdentifier: NSStoryboardSegue.Identifier("FantasyAnalyze"), sender: nil)
     }
@@ -82,7 +89,7 @@ class Dashboard: NSViewController {
     
     
     func saveColors(){
-        let allcolors = CoreService.service.fetchAllColors();
+        let allcolors = CoreDatabase.service.fetchAllColors();
         for item in allcolors {
             CoreDataStack.persistentContainer.viewContext.delete(item)
             CoreDataStack.saveContext();
@@ -93,9 +100,8 @@ class Dashboard: NSViewController {
             colobj.hexValue = color
             CoreDataStack.saveContext()
         }
+        
     }
-    
-    
     
 }
 

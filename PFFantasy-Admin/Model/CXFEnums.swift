@@ -84,12 +84,51 @@ enum ContestType:String {
     case blaze = "Blaze"
 }
 
+enum FetchPropertyKeys:String{
+    
+    case creditAccountId = "accountNo"
+    case playerUID = "uid"
+    case accountPlayerid = "accountUserID"
+}
+
 enum ContestStatus:Int{
     
     case available = 40
     case cappedOut = 45
     case unsolved = 50
     case expired = 60
+}
+
+enum TRANSACTION_TYPE:Int16{
+    case DEBIT = 2000
+    case CREDIT = 2010
+}
+
+
+enum TRANSACTION_MODE:Int32{
+    case DEPOSIT = 2020
+    case CONTEST_ENTRY = 2040
+    case CONTEST_WINS = 2050
+    case CASHOUT = 2030
+    
+}
+
+
+enum CURRENCY_TYPE:Int32 {
+    case CASH = 2060
+    case VIRTUAL = 2070
+}
+
+
+enum STATUS:Int32 {
+    case PENDING = 5100
+    case COMPLETED = 5200
+    case REJECTED = 5500;
+}
+
+enum ContestPaymentType:Int32{
+    case VIRTUAL = 500
+    case CASH = 600
 }
 
 

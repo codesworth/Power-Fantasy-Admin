@@ -24,9 +24,34 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
         //Dataservice.service.postTofirebase(key: "Mandrake", data: ["hell":"Madness" as AnyObject], path: "http://localhost:3000/api/v1/NewUsers")
         // Insert code here to initialize your application
-        SERIAL = getMachineSerial()
-        log("The serial is \(SERIAL)")
+        //updatePlayersDB()
         
+    }
+    
+    func updatePlayersDB(){
+        Dataservice.service.getNewUsers { (success, err, data) in
+            if(success && data != nil){
+                if let data = data as? Extras{
+                    CoreDatabase.service.createNewPlayer(largedata: data, h: { (success, keys) in
+                        if (success){
+                            //alert(title: "UPDATED", message: "New Player accounts succesfully indexed")
+                            Dataservice.service.updateIndexed(data: keys, handler: { (suc, er, dat) in
+                                if(suc){
+                                    messageBox("UPDATED", message: "Succesfully updated Players at \(dat!)", firstOption: "DISMISS", secondOption: nil, thirdOption: nil, firstAction: {}, secondAction: {}, thirdAction: nil)
+                                }else{
+                                    messageBox("ERROR", message: "Failed to update Players at \(dat!)", firstOption: "DISMISS", secondOption: nil, thirdOption: nil, firstAction: nil, secondAction: nil, thirdAction: nil)
+                                }
+                            })
+                            
+                        }else{
+                            alert(title: "GRAVE ERROR", message: "No Players to index")
+                        }
+                    })
+                }else{
+                    alert(title: "GRAVE ERROR", message:err?.localizedDescription ?? "Return data invalid")
+                }
+            }
+        }
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {

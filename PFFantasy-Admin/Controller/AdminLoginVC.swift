@@ -18,7 +18,13 @@ class AdminLoginVC: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
-        
+        let backgroundTask = NSBackgroundActivityScheduler(identifier: "Test-1")
+        backgroundTask.interval = 60
+        backgroundTask.qualityOfService = QualityOfService.default
+        backgroundTask.repeats = true
+        backgroundTask.schedule { (block) in
+            Swift.print("I happened");
+        }
         DECLAREDOMAIN(domain: LoggerDomain.startup)
         
     }

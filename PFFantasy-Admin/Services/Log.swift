@@ -13,6 +13,8 @@ enum LoggerDomain:String{
     case dashboard = "DashBoard Domain"
     case startup = "StartUp Domain"
     case preferencePain = "Preference Domain"
+    case blazeNetwork = "Blaze Questions"
+    case regular = "Regular Questions"
 }
 
 func DECLAREDOMAIN(domain:LoggerDomain){

@@ -14,7 +14,8 @@ protocol UpdatedContestWins:class {
 
 let EDITING_MODE = "canEdit"
 
-class AccountsUpdatesVC: NSViewController,NSTableViewDataSource,NSTableViewDelegate,NSComboBoxDelegate,NSComboBoxDataSource {
+class AccountsUpdatesVC: NSViewController,NSTableViewDataSource,
+NSTableViewDelegate,NSComboBoxDelegate,NSComboBoxDataSource {
 
     @IBOutlet weak var syncAccountsButt: FlatButton!
     @IBOutlet weak var searchAccountField: NSSearchField!

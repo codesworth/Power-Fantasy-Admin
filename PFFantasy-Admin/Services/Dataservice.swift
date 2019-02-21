@@ -120,7 +120,7 @@ class Dataservice{
             if let data = response.value as? Extras{
                 log(data.debugDescription)
                 for (key, value) in data{
-                    CoreDatabase.service.makeTransaction(key, value)
+                    //CoreDatabase.service.makeTransaction(key, value)
                 }
             }
         }
@@ -156,6 +156,16 @@ class Dataservice{
         Alamofire.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil).validate().responseJSON { (dataresponse) in
             
             print(dataresponse)
+            handler(dataresponse.result.isSuccess, dataresponse.result.error, dataresponse.result.value)
+            
+        }
+    }
+    
+    func invalidateActiveOnServer(uniqueID:String,handler:@escaping CompletionHandler){
+        let url:URLConvertible = URL(string: URL_INVALIDATE_CONTESTS)!
+        let data = ["key":uniqueID]
+        Alamofire.request(url, method: .post, parameters: data, encoding: JSONEncoding.default, headers: nil).validate().responseJSON { (dataresponse) in
+
             handler(dataresponse.result.isSuccess, dataresponse.result.error, dataresponse.result.value)
             
         }

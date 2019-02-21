@@ -18,8 +18,28 @@ class CoreDatabase {
     }
     
     
-    func cacheUnIndexedTransaction(_ key:String, _ obj:Any){
-
+    func cacheUnIndexedTransaction(largedata:Extras){
+        
+        for(key,value) in largedata{
+            if let value = value as? Extras{
+                let trans = CXTransaction(context: CoreDataStack.getContext())
+                trans.amount = value[TRANSAC_AMOUNT] as! Double
+                trans.accountId = value[FIELD_TRANSAC_ACC_ID] as? String
+                trans.balance = value[TRANSAC_BALANCE] as! Double
+                trans.cluid = value[FIELD_TRANSAC_CLUID] as? String
+                trans.currencyType = value[FIELD_TRANSAC_CURTYPE] as! Int32
+                let ts = value[FIELD_TRANSAC_TS] as! Int
+                trans.date = Date(timeIntervalSince1970: TimeInterval(ts))
+                trans.finalDetail = value[TRANSAC_FINDETAIL] as? String
+                trans.id = key
+                trans.status = value[TRANSAC_STATUS] as! Int32
+                trans.transactionMode = Int32(value[FIELD_TRANSAC_MODE] as! Int)
+                trans.transactionType = value[FIELD_TRANSAC_TYPE] as! Int16
+                trans.indexed = true
+                CoreDataStack.saveContext()
+            }
+            
+        }
 
     }
     
@@ -160,6 +180,7 @@ class CoreDatabase {
             alert(title: "Coredata Error", message: error.localizedDescription)
         }
         return sumn
+        //271613489
     }
     
     func createNewPlayer(largedata:Extras,h:(_ success:Bool,_ keys:[String])->()){
@@ -180,7 +201,7 @@ class CoreDatabase {
                         account.accountUserID = key
                         account.aggregatedCredit = acval[FIELD_AGGRE_CREDIT_] as! Double
                         account.aggregatedGains  = acval[FIELD_AGGRE_GAIN] as! Double
-                        account.aggregatedLosses = acval[FIELD_AGGRE_LOSS] as! Double
+//                        account.aggregatedLosses = acval[FIELD_AGGRE_LOSS] as! Double
                         account.balance = acval[FIELD_CREDIT_BALANCE] as! Double
                         account.virtualCoins = acval[FIELD_VIRT_BALANCE] as! Double
                         account.mutated = acval[FIELD_MUTATED] as! Bool

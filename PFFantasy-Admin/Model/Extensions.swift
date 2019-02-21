@@ -50,11 +50,58 @@ extension CorrectPicks{
     }
 }
 
+extension RegularQuestions{
+    
+    @objc func alert(){
+        PFFantasy_Admin.alert(title: "ERROR", message: "Unable to deactivate expired Contests")
+    }
+    
+    public override func awakeFromInsert() {
+        let backgroundTask = NSBackgroundActivityScheduler(identifier: self.id!)
+        backgroundTask.interval = Date(timeIntervalSince1970: TimeInterval(timestamp)).timeIntervalSinceNow
+        backgroundTask.qualityOfService = QualityOfService.default
+        backgroundTask.repeats = false
+        backgroundTask.schedule { (block) in
+            Dataservice.service.invalidateActiveOnServer(uniqueID: self.id!, handler: { (success, error, data) in
+                if success && data != nil{
+                    block(.finished)
+                }else{
+                    Log.log(statement: "Unable to deactivate Active on Server with id: \(self.id!)", domain: LoggerDomain.regular.rawValue)
+                    self.perform(#selector(self.alert), on: Thread.main, with: nil, waitUntilDone: false)
+                    block(.finished)
+                }
+            })
+        }
+    }
+}
+
 
 extension BlazeQuestion{
     
     func getOptions()->Extras{
         return choice as! Extras
+    }
+    
+    @objc func alert(){
+        PFFantasy_Admin.alert(title: "ERROR", message: "Unable to deactivate expired Contests")
+    }
+    
+    public override func awakeFromInsert() {
+        let backgroundTask = NSBackgroundActivityScheduler(identifier: self.id!)
+        backgroundTask.interval = Date(timeIntervalSince1970: TimeInterval(timestamp)).timeIntervalSinceNow
+        backgroundTask.qualityOfService = QualityOfService.default
+        backgroundTask.repeats = false
+        backgroundTask.schedule { (block) in
+            Dataservice.service.invalidateActiveOnServer(uniqueID: self.id!, handler: { (success, error, data) in
+                if success && data != nil{
+                    block(.finished)
+                }else{
+                    Log.log(statement: "Unable to deactivate Active on Server with id: \(self.id!)", domain: LoggerDomain.blazeNetwork.rawValue)
+                    self.perform(#selector(self.alert), on: Thread.main, with: nil, waitUntilDone: false)
+                    block(.finished)
+                }
+            })
+        }
     }
 }
 

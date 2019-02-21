@@ -28,12 +28,14 @@ let PATH_NEWUSERS = "NewUsers"
 var URL_CONTESTS = "https://us-central1-xfantasy-423b8.cloudfunctions.net/postContests"
 let URL_GET_ALL_PICKS = "https://us-central1-xfantasy-423b8.cloudfunctions.net/fetchContestedPicks"
  let URL_POST_ALL_CORRECT_PICKS = "https://us-central1-xfantasy-423b8.cloudfunctions.net/uploadCorrectPicks"
+let URL_CACHE_UN_INDEXED_TRANSACTIONS = "https://us-central1-xfantasy-423b8.cloudfunctions.net/cacheUnIndexedTransaction"
 let URL_POST_LEADERBOARD = "https://us-central1-xfantasy-423b8.cloudfunctions.net/postLeaderBoard"
 let  URL_ACCOUNT_MUTATE = "https://us-central1-xfantasy-423b8.cloudfunctions.net/toggleAccountMutablity"
 let URL_UPDATE_ACCOUNTS_ON_SERVER = "https://us-central1-xfantasy-423b8.cloudfunctions.net/updateAccounts"
 let URL_GET_ALL_ACCOUNTS = "https://us-central1-xfantasy-423b8.cloudfunctions.net/getAllAccounts"
 let URL_FETCH_NEWPLAYERS = "https://us-central1-xfantasy-423b8.cloudfunctions.net/fetchNewregisteredPlayers"
 let URL_UPDATE_INDEXED = "https://us-central1-xfantasy-423b8.cloudfunctions.net/updateIndexed"
+let URL_INVALIDATE_CONTESTS = "https://us-central1-xfantasy-423b8.cloudfunctions.net/deactivateStartedContests"
  /************************************************************************************/
 
 

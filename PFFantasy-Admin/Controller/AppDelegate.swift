@@ -16,7 +16,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         //Dataservice.service.getTransactions()
-        AuthenticationService.main.createRootUser(username: "root", password: "12shady");
+        //AuthenticationService.main.createRootUser(username: "root", password: "12shady");
         let alreadyRun = UserDefaults.standard.bool(forKey: FIRST_R)
         if !alreadyRun{
             UserDefaults.standard.set(1, forKey: QUESIDCOUNT)
@@ -126,6 +126,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // If we got here, it is time to quit.
         return .terminateNow
     }
+
 
 }
 

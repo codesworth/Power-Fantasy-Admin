@@ -19,5 +19,7 @@ extension BlazeQuestion {
     @NSManaged public var date: NSDate?
     @NSManaged public var id: String?
     @NSManaged public var choice: NSObject?
+    
+    
 
 }

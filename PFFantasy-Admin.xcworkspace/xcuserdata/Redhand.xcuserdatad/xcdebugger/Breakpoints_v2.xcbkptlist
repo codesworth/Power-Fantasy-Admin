@@ -330,12 +330,12 @@
                   moduleName = "PFFantasy-Admin"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/redhand/Development/MacOS/PFFantasy-Admin/PFFantasy-Admin/Services/Dataservice.swift"
-                  timestampString = "557511778.332476"
+                  timestampString = "564957421.854978"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "55"
                   endingLineNumber = "55"
-                  offsetFromSymbolStart = "727">
+                  offsetFromSymbolStart = "723">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -345,7 +345,7 @@
                   moduleName = "PFFantasy-Admin"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/redhand/Development/MacOS/PFFantasy-Admin/PFFantasy-Admin/Services/Dataservice.swift"
-                  timestampString = "557511778.335427"
+                  timestampString = "564957421.858393"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "56"
@@ -458,12 +458,12 @@
                   moduleName = "PFFantasy-Admin"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/redhand/Development/MacOS/PFFantasy-Admin/PFFantasy-Admin/View/RegularCells.swift"
-                  timestampString = "557511778.370142"
+                  timestampString = "564957421.900591"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "166"
                   endingLineNumber = "166"
-                  offsetFromSymbolStart = "4423">
+                  offsetFromSymbolStart = "4430">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -473,12 +473,12 @@
                   moduleName = "PFFantasy-Admin"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/redhand/Development/MacOS/PFFantasy-Admin/PFFantasy-Admin/View/RegularCells.swift"
-                  timestampString = "557511778.37283"
+                  timestampString = "564957421.904421"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "166"
                   endingLineNumber = "166"
-                  offsetFromSymbolStart = "4487">
+                  offsetFromSymbolStart = "4494">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -762,7 +762,7 @@
                   moduleName = "PFFantasy-Admin"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/redhand/Development/MacOS/PFFantasy-Admin/PFFantasy-Admin/Controller/FantasyAnalyzerVC.swift"
-                  timestampString = "557511778.537448"
+                  timestampString = "564957422.108651"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "100"
@@ -777,7 +777,7 @@
                   moduleName = "PFFantasy-Admin"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/redhand/Development/MacOS/PFFantasy-Admin/PFFantasy-Admin/Controller/FantasyAnalyzerVC.swift"
-                  timestampString = "557511778.540446"
+                  timestampString = "564957422.11282"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "100"
@@ -826,7 +826,7 @@
                   moduleName = "PFFantasy-Admin"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/redhand/Development/MacOS/PFFantasy-Admin/PFFantasy-Admin/Controller/FantasyAnalyzerVC.swift"
-                  timestampString = "557511778.556905"
+                  timestampString = "564957422.131529"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "105"
@@ -841,7 +841,7 @@
                   moduleName = "PFFantasy-Admin"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/redhand/Development/MacOS/PFFantasy-Admin/PFFantasy-Admin/Controller/FantasyAnalyzerVC.swift"
-                  timestampString = "557511778.561281"
+                  timestampString = "564957422.136036"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "105"
@@ -1014,17 +1014,17 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PFFantasy-Admin/Controller/EngineVC.swift"
-            timestampString = "557495393.9330961"
+            timestampString = "565385016.520202"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "78"
             endingLineNumber = "78"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "getConsumables()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1034,13 +1034,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PFFantasy-Admin/Controller/EngineVC.swift"
-            timestampString = "557495393.933833"
+            timestampString = "565385016.521186"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "171"
             endingLineNumber = "171"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "tableView(_:viewFor:row:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1050,13 +1050,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PFFantasy-Admin/Controller/EngineVC.swift"
-            timestampString = "557495393.93445"
+            timestampString = "565385016.521657"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "173"
             endingLineNumber = "173"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "tableView(_:viewFor:row:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1066,13 +1066,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PFFantasy-Admin/Controller/EngineVC.swift"
-            timestampString = "557495393.935122"
+            timestampString = "565385016.522103"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "175"
             endingLineNumber = "175"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "tableView(_:viewFor:row:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1242,23 +1242,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PFFantasy-Admin/Controller/AccountsUpdatesVC.swift"
-            timestampString = "557487831.551912"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "134"
-            endingLineNumber = "134"
-            landmarkName = "updateContestWins(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PFFantasy-Admin/Controller/AccountsUpdatesVC.swift"
-            timestampString = "557487831.5530289"
+            timestampString = "564957420.651847"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "135"
@@ -1274,7 +1258,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PFFantasy-Admin/Controller/AccountsUpdatesVC.swift"
-            timestampString = "557487831.553548"
+            timestampString = "564957420.651965"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "136"
@@ -1290,71 +1274,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PFFantasy-Admin/Controller/AccountsUpdatesVC.swift"
-            timestampString = "557487831.554023"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "138"
-            endingLineNumber = "138"
-            landmarkName = "updateContestWins(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PFFantasy-Admin/Controller/AccountsUpdatesVC.swift"
-            timestampString = "557487831.554505"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "229"
-            endingLineNumber = "229"
-            landmarkName = "findPaymentToList(key:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PFFantasy-Admin/Controller/AccountsUpdatesVC.swift"
-            timestampString = "557487831.554951"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "230"
-            endingLineNumber = "230"
-            landmarkName = "findPaymentToList(key:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PFFantasy-Admin/Controller/AccountsUpdatesVC.swift"
-            timestampString = "557487831.555388"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "232"
-            endingLineNumber = "232"
-            landmarkName = "findPaymentToList(key:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PFFantasy-Admin/Controller/AccountsUpdatesVC.swift"
-            timestampString = "557487831.555968"
+            timestampString = "564957420.652042"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "137"
@@ -1370,12 +1290,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PFFantasy-Admin/Controller/AccountsUpdatesVC.swift"
-            timestampString = "557487831.556816"
+            timestampString = "564957420.6521111"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "114"
-            endingLineNumber = "114"
-            landmarkName = "sortByCompressed(_:)"
+            startingLineNumber = "139"
+            endingLineNumber = "139"
+            landmarkName = "updateContestWins(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1386,12 +1306,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PFFantasy-Admin/Controller/AccountsUpdatesVC.swift"
-            timestampString = "557487831.557654"
+            timestampString = "564957420.652181"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "117"
-            endingLineNumber = "117"
-            landmarkName = "sortByCompressed(_:)"
+            startingLineNumber = "230"
+            endingLineNumber = "230"
+            landmarkName = "findPaymentToList(key:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1402,7 +1322,55 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PFFantasy-Admin/Controller/AccountsUpdatesVC.swift"
-            timestampString = "557487831.558818"
+            timestampString = "564957420.652249"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "231"
+            endingLineNumber = "231"
+            landmarkName = "findPaymentToList(key:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PFFantasy-Admin/Controller/AccountsUpdatesVC.swift"
+            timestampString = "564957420.652318"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "233"
+            endingLineNumber = "233"
+            landmarkName = "findPaymentToList(key:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PFFantasy-Admin/Controller/AccountsUpdatesVC.swift"
+            timestampString = "564957420.652386"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "138"
+            endingLineNumber = "138"
+            landmarkName = "updateContestWins(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PFFantasy-Admin/Controller/AccountsUpdatesVC.swift"
+            timestampString = "564957420.652454"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "115"
@@ -1418,12 +1386,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PFFantasy-Admin/Controller/AccountsUpdatesVC.swift"
-            timestampString = "557487831.5595371"
+            timestampString = "564957420.652522"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "267"
-            endingLineNumber = "267"
-            landmarkName = "getModifiableArray()"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
+            landmarkName = "sortByCompressed(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1434,7 +1402,23 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PFFantasy-Admin/Controller/AccountsUpdatesVC.swift"
-            timestampString = "557487831.56031"
+            timestampString = "564957420.652589"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
+            landmarkName = "sortByCompressed(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PFFantasy-Admin/Controller/AccountsUpdatesVC.swift"
+            timestampString = "564957420.652658"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "268"
@@ -1449,13 +1433,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "PFFantasy-Admin/Services/CoreDataService.swift"
-            timestampString = "557511777.169736"
+            filePath = "PFFantasy-Admin/Controller/AccountsUpdatesVC.swift"
+            timestampString = "564957420.6527261"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "348"
-            endingLineNumber = "348"
-            landmarkName = "sycronizeAccounts(data:)"
+            startingLineNumber = "269"
+            endingLineNumber = "269"
+            landmarkName = "getModifiableArray()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1466,13 +1450,29 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PFFantasy-Admin/Services/CoreDataService.swift"
-            timestampString = "557511777.169808"
+            timestampString = "564957420.652797"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "348"
+            endingLineNumber = "348"
+            landmarkName = "createTransactionForWinsAndUpdateAccounts(winnings:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PFFantasy-Admin/Services/CoreDataService.swift"
+            timestampString = "564957420.652871"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "400"
             endingLineNumber = "400"
-            landmarkName = "CoreDatabase"
-            landmarkType = "3">
+            landmarkName = "fetchUnIndexedTransactions()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1498,13 +1498,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PFFantasy-Admin/Controller/EngineVC.swift"
-            timestampString = "557495393.936404"
+            timestampString = "565385016.523415"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "229"
             endingLineNumber = "229"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "prepare(for:sender:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1514,13 +1514,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PFFantasy-Admin/Controller/EngineVC.swift"
-            timestampString = "557495393.936991"
+            timestampString = "565385016.523919"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "230"
             endingLineNumber = "230"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "prepare(for:sender:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1530,13 +1530,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PFFantasy-Admin/Controller/EngineVC.swift"
-            timestampString = "557495393.937476"
+            timestampString = "565385016.5243289"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "231"
             endingLineNumber = "231"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "prepare(for:sender:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1546,13 +1546,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PFFantasy-Admin/Controller/EngineVC.swift"
-            timestampString = "557495393.938032"
+            timestampString = "565385016.524734"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "149"
             endingLineNumber = "149"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "uploadLeaderBoard(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1562,13 +1562,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PFFantasy-Admin/Controller/EngineVC.swift"
-            timestampString = "557495393.938583"
+            timestampString = "565385016.525147"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "162"
             endingLineNumber = "162"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "makeContetstPayments()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1578,13 +1578,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PFFantasy-Admin/Controller/EngineVC.swift"
-            timestampString = "557495393.939159"
+            timestampString = "565385016.5255179"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "163"
             endingLineNumber = "163"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "makeContetstPayments()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1594,13 +1594,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PFFantasy-Admin/Controller/EngineVC.swift"
-            timestampString = "557495393.939613"
+            timestampString = "565385016.5259219"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "150"
             endingLineNumber = "150"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "uploadLeaderBoard(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1610,12 +1610,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PFFantasy-Admin/Services/CoreDataService.swift"
-            timestampString = "557511777.170025"
+            timestampString = "564957420.6532249"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "359"
             endingLineNumber = "359"
-            landmarkName = "sycronizeAccounts(data:)"
+            landmarkName = "createTransactionForWinsAndUpdateAccounts(winnings:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1626,12 +1626,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PFFantasy-Admin/Services/CoreDataService.swift"
-            timestampString = "557511777.170094"
+            timestampString = "564957420.6532969"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "360"
             endingLineNumber = "360"
-            landmarkName = "sycronizeAccounts(data:)"
+            landmarkName = "createTransactionForWinsAndUpdateAccounts(winnings:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1642,11 +1642,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PFFantasy-Admin/Services/CoreDataService.swift"
-            timestampString = "557511777.170159"
+            timestampString = "564957420.653365"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "429"
-            endingLineNumber = "429">
+            endingLineNumber = "429"
+            landmarkName = "deleteAllObjects()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1656,11 +1658,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PFFantasy-Admin/Services/CoreDataService.swift"
-            timestampString = "557511777.170224"
+            timestampString = "564957420.653432"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "429"
-            endingLineNumber = "429">
+            endingLineNumber = "429"
+            landmarkName = "deleteAllObjects()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1670,11 +1674,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PFFantasy-Admin/Services/CoreDataService.swift"
-            timestampString = "557511777.170289"
+            timestampString = "564957420.653499"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "429"
-            endingLineNumber = "429">
+            endingLineNumber = "429"
+            landmarkName = "deleteAllObjects()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1684,11 +1690,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PFFantasy-Admin/Controller/AccountsUpdatesVC.swift"
-            timestampString = "557487831.561547"
+            timestampString = "564957420.653567"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "150"
-            endingLineNumber = "150"
+            startingLineNumber = "151"
+            endingLineNumber = "151"
             landmarkName = "updateAccountsOnServer(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1700,11 +1706,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PFFantasy-Admin/Controller/AccountsUpdatesVC.swift"
-            timestampString = "557487831.56363"
+            timestampString = "564957420.653635"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "160"
-            endingLineNumber = "160"
+            startingLineNumber = "161"
+            endingLineNumber = "161"
             landmarkName = "updateAccountsOnServer(_:)"
             landmarkType = "7">
             <Locations>
@@ -1716,12 +1722,12 @@
                   moduleName = "PFFantasy-Admin"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/redhand/Development/MacOS/PFFantasy-Admin/PFFantasy-Admin/Controller/AccountsUpdatesVC.swift"
-                  timestampString = "557511778.948115"
+                  timestampString = "564957422.631328"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "160"
-                  endingLineNumber = "160"
-                  offsetFromSymbolStart = "3041">
+                  startingLineNumber = "161"
+                  endingLineNumber = "161"
+                  offsetFromSymbolStart = "3013">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -1731,11 +1737,11 @@
                   moduleName = "PFFantasy-Admin"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/redhand/Development/MacOS/PFFantasy-Admin/PFFantasy-Admin/Controller/AccountsUpdatesVC.swift"
-                  timestampString = "557511778.951574"
+                  timestampString = "564957422.63661"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "161"
-                  endingLineNumber = "161"
+                  startingLineNumber = "162"
+                  endingLineNumber = "162"
                   offsetFromSymbolStart = "70">
                </Location>
             </Locations>
@@ -1748,11 +1754,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PFFantasy-Admin/Controller/AccountsUpdatesVC.swift"
-            timestampString = "557487831.5647171"
+            timestampString = "564957420.653702"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "159"
-            endingLineNumber = "159"
+            startingLineNumber = "160"
+            endingLineNumber = "160"
             landmarkName = "updateAccountsOnServer(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1764,12 +1770,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PFFantasy-Admin/Services/CoreDataService.swift"
-            timestampString = "557511777.170413"
+            timestampString = "564957420.65377"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "414"
             endingLineNumber = "414"
-            landmarkName = "correct()"
+            landmarkName = "fetchEntitiesByKeys(keys:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1780,12 +1786,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PFFantasy-Admin/Services/CoreDataService.swift"
-            timestampString = "557511777.170483"
+            timestampString = "564957420.653837"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "415"
             endingLineNumber = "415"
-            landmarkName = "correct()"
+            landmarkName = "fetchEntitiesByKeys(keys:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1796,12 +1802,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PFFantasy-Admin/Services/CoreDataService.swift"
-            timestampString = "557511777.17055"
+            timestampString = "564957420.653903"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "416"
             endingLineNumber = "416"
-            landmarkName = "correct()"
+            landmarkName = "fetchEntitiesByKeys(keys:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1812,12 +1818,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PFFantasy-Admin/Services/CoreDataService.swift"
-            timestampString = "557511777.170617"
+            timestampString = "564957420.653969"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "418"
             endingLineNumber = "418"
-            landmarkName = "correct()"
+            landmarkName = "fetchEntitiesByKeys(keys:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1908,12 +1914,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PFFantasy-Admin/Services/CoreDataService.swift"
-            timestampString = "557511777.171026"
+            timestampString = "564957420.654212"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "420"
             endingLineNumber = "420"
-            landmarkName = "correct()"
+            landmarkName = "fetchEntitiesByKeys(keys:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1924,13 +1930,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PFFantasy-Admin/Services/CoreDataService.swift"
-            timestampString = "557511777.171092"
+            timestampString = "564957420.654282"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "421"
             endingLineNumber = "421"
-            landmarkName = "correct()"
-            landmarkType = "7">
+            landmarkName = "CoreDatabase"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1979,6 +1985,694 @@
             endingLineNumber = "63"
             landmarkName = "unknown"
             landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PFFantasy-Admin/Model/Extensions.swift"
+            timestampString = "557969367.360728"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "awakeFromInsert()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PFFantasy-Admin/Controller/FantasyAnalyzerVC.swift"
+            timestampString = "564956373.535444"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "proceedPressed(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PFFantasy-Admin/Controller/FantasyAnalyzerVC.swift"
+            timestampString = "564956374.681006"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "proceedPressed(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PFFantasy-Admin/Controller/FantasyAnalyzerVC.swift"
+            timestampString = "564956393.323918"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "proceedPressed(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PFFantasy-Admin/Controller/FantasyAnalyzerVC.swift"
+            timestampString = "564956395.187016"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "proceedPressed(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PFFantasy-Admin/Controller/FantasyAnalyzerVC.swift"
+            timestampString = "564956396.050882"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "proceedPressed(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PFFantasy-Admin/Controller/FantasyAnalyzerVC.swift"
+            timestampString = "564956397.741649"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "proceedPressed(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PFFantasy-Admin/Controller/FantasyAnalyzerVC.swift"
+            timestampString = "564956423.6030771"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "proceedPressed(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PFFantasy-Admin/Controller/FantasyAnalyzerVC.swift"
+            timestampString = "564956428.175645"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PFFantasy-Admin/Controller/FantasyAnalyzerVC.swift"
+            timestampString = "564956428.721314"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PFFantasy-Admin/Controller/FantasyAnalyzerVC.swift"
+            timestampString = "564956429.196987"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PFFantasy-Admin/Controller/FantasyAnalyzerVC.swift"
+            timestampString = "564956430.455291"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PFFantasy-Admin/Controller/EngineVC.swift"
+            timestampString = "565385016.5276361"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "138"
+            endingLineNumber = "138"
+            landmarkName = "uploadLeaderBoard(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PFFantasy-Admin/Controller/EngineVC.swift"
+            timestampString = "565385016.528318"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "139"
+            endingLineNumber = "139"
+            landmarkName = "uploadLeaderBoard(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PFFantasy-Admin/Controller/EngineVC.swift"
+            timestampString = "565385016.5288661"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "142"
+            endingLineNumber = "142"
+            landmarkName = "uploadLeaderBoard(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PFFantasy_Admin.EngineVC.uploadLeaderBoard(__C.NSButton) -&gt; ()"
+                  moduleName = "PFFantasy-Admin"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/redhand/Development/MacOS/PFFantasy-Admin/PFFantasy-Admin/Controller/EngineVC.swift"
+                  timestampString = "564957423.054777"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "142"
+                  endingLineNumber = "142"
+                  offsetFromSymbolStart = "1353">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool, Swift.Optional&lt;Swift.Error&gt;, Swift.String) -&gt; () in PFFantasy_Admin.EngineVC.uploadLeaderBoard(__C.NSButton) -&gt; ()"
+                  moduleName = "PFFantasy-Admin"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/redhand/Development/MacOS/PFFantasy-Admin/PFFantasy-Admin/Controller/EngineVC.swift"
+                  timestampString = "564957423.0591151"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "143"
+                  endingLineNumber = "143"
+                  offsetFromSymbolStart = "75">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PFFantasy-Admin/Controller/EngineVC.swift"
+            timestampString = "565385016.529544"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "145"
+            endingLineNumber = "145"
+            landmarkName = "uploadLeaderBoard(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PFFantasy-Admin/Controller/EngineVC.swift"
+            timestampString = "565385016.530174"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "147"
+            endingLineNumber = "147"
+            landmarkName = "uploadLeaderBoard(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PFFantasy-Admin/Controller/EngineVC.swift"
+            timestampString = "565385016.530792"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "143"
+            endingLineNumber = "143"
+            landmarkName = "uploadLeaderBoard(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PFFantasy-Admin/Controller/EngineVC.swift"
+            timestampString = "565385016.531478"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "146"
+            endingLineNumber = "146"
+            landmarkName = "uploadLeaderBoard(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PFFantasy-Admin/Controller/EngineVC.swift"
+            timestampString = "565385016.531931"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
+            landmarkName = "uploadLeaderBoard(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PFFantasy-Admin/Controller/EngineVC.swift"
+            timestampString = "565385016.532813"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "152"
+            endingLineNumber = "152"
+            landmarkName = "uploadLeaderBoard(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PFFantasy-Admin/Controller/EngineVC.swift"
+            timestampString = "565385016.5336111"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "154"
+            endingLineNumber = "154"
+            landmarkName = "uploadLeaderBoard(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PFFantasy-Admin/Controller/EngineVC.swift"
+            timestampString = "565385016.534404"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "153"
+            endingLineNumber = "153"
+            landmarkName = "uploadLeaderBoard(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PFFantasy-Admin/Controller/AccountsUpdatesVC.swift"
+            timestampString = "564957420.655232"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "syncAccountsPressed(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PFFantasy-Admin/Controller/AccountsUpdatesVC.swift"
+            timestampString = "564957420.6553071"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "syncAccountsPressed(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PFFantasy-Admin/Controller/AccountsUpdatesVC.swift"
+            timestampString = "564957420.6553741"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
+            landmarkName = "syncAccountsPressed(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PFFantasy-Admin/Controller/AccountsUpdatesVC.swift"
+            timestampString = "564957420.655443"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
+            landmarkName = "syncAccountsPressed(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PFFantasy-Admin/Controller/AccountsUpdatesVC.swift"
+            timestampString = "564957420.655512"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
+            landmarkName = "syncAccountsPressed(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PFFantasy-Admin/Controller/AccountsUpdatesVC.swift"
+            timestampString = "564957420.65558"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "syncAccountsPressed(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PFFantasy-Admin/Controller/AccountsUpdatesVC.swift"
+            timestampString = "564957420.655648"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
+            landmarkName = "syncAccountsPressed(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PFFantasy-Admin/Controller/AccountsUpdatesVC.swift"
+            timestampString = "564957420.655717"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
+            landmarkName = "syncAccountsPressed(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PFFantasy-Admin/Services/CoreDataService.swift"
+            timestampString = "564957420.655785"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "372"
+            endingLineNumber = "372"
+            landmarkName = "sycronizeAccounts(data:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PFFantasy-Admin/Services/CoreDataService.swift"
+            timestampString = "564957420.655853"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "374"
+            endingLineNumber = "374"
+            landmarkName = "sycronizeAccounts(data:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PFFantasy-Admin/Services/CoreDataService.swift"
+            timestampString = "564957420.65592"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "375"
+            endingLineNumber = "375"
+            landmarkName = "sycronizeAccounts(data:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PFFantasy-Admin/Services/CoreDataService.swift"
+            timestampString = "564957420.655988"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "378"
+            endingLineNumber = "378"
+            landmarkName = "sycronizeAccounts(data:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PFFantasy-Admin/Services/CoreDataService.swift"
+            timestampString = "564957420.656057"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "380"
+            endingLineNumber = "380"
+            landmarkName = "sycronizeAccounts(data:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PFFantasy-Admin/Services/CoreDataService.swift"
+            timestampString = "564957420.6561249"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "381"
+            endingLineNumber = "381"
+            landmarkName = "sycronizeAccounts(data:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PFFantasy-Admin/Services/CoreDataService.swift"
+            timestampString = "564957420.656194"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "389"
+            endingLineNumber = "389"
+            landmarkName = "sycronizeAccounts(data:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PFFantasy-Admin/Services/CoreDataService.swift"
+            timestampString = "564957420.656262"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "385"
+            endingLineNumber = "385"
+            landmarkName = "sycronizeAccounts(data:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PFFantasy-Admin/Services/CoreDataService.swift"
+            timestampString = "564957420.65633"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "373"
+            endingLineNumber = "373"
+            landmarkName = "sycronizeAccounts(data:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PFFantasy-Admin/Controller/EngineVC.swift"
+            timestampString = "565385016.536128"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "137"
+            endingLineNumber = "137"
+            landmarkName = "uploadLeaderBoard(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
